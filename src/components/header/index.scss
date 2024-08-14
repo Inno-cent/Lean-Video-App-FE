@@ -49,6 +49,23 @@
       }
       .header--auth--buttons {
         display: flex;
+        align-items: center;
+        .login{
+          margin: 0 15px;
+        }
+        .sign-up{
+          button{
+            padding: 10px 30px;
+            background: #415A77;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            font-weight: 400;
+            size: 18px;
+            line-height: 27px;
+            color: #fff;
+          }
+        }
       }
     }
   }
