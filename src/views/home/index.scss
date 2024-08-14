@@ -163,7 +163,10 @@
       align-items: center;
       background-color: #d9d9d9;
       gap: 1rem;
-      flex: 1;
+      flex: .35;
+      //   width: 250px;
+      //   height: 500px;
+      //   box-sizing: border-box;
 
       &:first-child {
         padding-top: 1rem;
@@ -178,6 +181,12 @@
         padding-top: 0;
       }
       .content {
+        &:first-child {
+          margin-bottom: 1rem;
+        }
+        &:nth-child(2) {
+          margin-top: 1rem;
+        }
         h1 {
           font-family: "Inter";
           font-weight: 700;
