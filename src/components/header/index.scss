@@ -1,5 +1,29 @@
-.main--page--container {
-  .section--one--container {
-    background: #0d1b2a;
+.header--wrapper {
+  header {
+    .header--inner {
+      display: flex;
+      .header--logo {
+        .logo--wrapper {
+        }
+      }
+      .header--menu {
+        .header--menu__inner {
+          display: flex;
+          flex-direction: row;
+
+          .menu--list {
+            li {
+              list-style: none;
+              list-style-type: none;
+              font-family: Inter;
+              font-weight: 400;
+              size: 18px;
+              line-height: 27px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 }

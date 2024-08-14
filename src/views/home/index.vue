@@ -1,19 +1,23 @@
 <template>
-  <div class="landing--page">
-    <Header/>
+  <div class="landing--page--container">
+    <div class="landing--page--inner">
+      <div class="section">
+        <Header />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import Header from '../../components/header/index.vue'
+import Header from "@components/header/index.vue";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-   Header
+    Header,
   },
-}
+};
 </script>
 
-<style>
-
-</style>
+<style lang="scss">
+@import "./index.scss";
+</style>/
