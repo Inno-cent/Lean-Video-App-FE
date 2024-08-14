@@ -46,9 +46,9 @@
               pixelated faces and choppy audio
             </p>
           </div>
-          <div class="info--btn">
-            <button>Learn more</button>
-          </div>
+          <div class="main--head--button--wrapper">
+              <button>Get started for free</button>
+            </div>
         </div>
         <div class="right-info">
         <div class="image--wrap">

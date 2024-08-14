@@ -1,4 +1,19 @@
 .landing--page--container {
+  .main--head--button--wrapper {
+    button {
+      padding: 10px 30px;
+      background: #415a77;
+      outline: none;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+  }
   .landing--page--inner {
     background: conic-gradient(
       from 132.57deg at 58.04% 62.79%,
@@ -34,21 +49,6 @@
           text-align: center;
         }
       }
-      .main--head--button--wrapper {
-        button {
-          padding: 10px 30px;
-          background: #415a77;
-          outline: none;
-          border: none;
-          border-radius: 30px;
-          font-size: 18px;
-          font-weight: 600;
-          line-height: 27px;
-          align-items: center;
-          text-align: center;
-          color: #fff;
-        }
-      }
     }
     // .main--bg--image {
     .image--inner--wrapper {
@@ -73,6 +73,8 @@
       display: flex;
       align-items: flex-start;
       flex-direction: column;
+      width: 47%;
+      margin-right: 3%;
       .left--info__header {
         h2 {
           font-family: "Inter";
@@ -87,10 +89,13 @@
           font-family: "Inter";
           font-weight: 400;
           font-size: 20px;
+          line-height: 30px;
         }
       }
     }
     .right-info {
+      width: 47%;
+      margin-left: 3%;
     }
   }
 }
