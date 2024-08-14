@@ -68,6 +68,30 @@
         </div>
       </div>
     </div>
+
+    <div class="section">
+      <div class="works--conatiner">
+        <h1 class="landing--header">How Lean Works ?</h1>
+        <p  class="landing--subtext">
+          Getting started with Lean is quick and easy. <br />
+          Follow these simple steps to begin enjoying seamless, high-quality
+          video calls
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="explore--container">
+        <h1 class="landing--header">
+          Explore features designed to enhance your video calling experience
+        </h1>
+        <p class="landing--subtext">
+          Discover features that enhance your video calling experience with
+          high-definition quality, secure <br /> communication, and intuitive
+          design for seamless connections
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
