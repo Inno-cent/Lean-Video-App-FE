@@ -96,6 +96,15 @@
     .right-info {
       width: 47%;
       margin-left: 3%;
+      .image--wrap {
+        width: 47%;
+        margin-left: 3%;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
     }
   }
 }
