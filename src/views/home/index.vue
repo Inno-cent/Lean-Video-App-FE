@@ -21,6 +21,12 @@
               <button>Get started for free</button>
             </div>
           </div>
+
+          <!-- <div class="main--bg--image"> -->
+            <div class="image--inner--wrapper">
+              <img src="../../assets/images/bg.svg" alt="bg-image">
+            </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>

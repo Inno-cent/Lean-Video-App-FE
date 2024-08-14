@@ -16,7 +16,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin: 5rem 10px 2rem;
+      margin: 5rem 10px 6rem;
       .head--text--content {
         h2 {
           font-family: "Inter";
@@ -26,12 +26,42 @@
         }
       }
       .sub--head--text {
+        margin-bottom: 2rem;
         p {
-          font-size: 24px;
+          font-size: 20px;
           line-height: 36px;
           font-weight: 400;
+          text-align: center;
         }
+      }
+      .main--head--button--wrapper {
+        button {
+          padding: 10px 30px;
+          background: #415a77;
+          outline: none;
+          border: none;
+          border-radius: 30px;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 27px;
+          align-items: center;
+          text-align: center;
+          color: #fff;
+        }
+      }
+    }
+    // .main--bg--image {
+    .image--inner--wrapper {
+      // max-width: 300px;
+      width: 90%;
+      max-width: 1400px;
+      margin: 0 auto;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
       }
     }
   }
 }
+// }
