@@ -151,16 +151,32 @@
     display: flex;
     flex-direction: row;
     padding: 2rem;
-    gap: 2rem; /* Add space between the two containers */
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px;
+    align-items: stretch;
+    gap: 2rem;
 
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #d9d9d9;
-      padding: 1rem;
       gap: 1rem;
+      flex: 1;
 
+      &:first-child {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0;
+      }
+      &:nth-child(2) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 0;
+      }
       .content {
         h1 {
           font-family: "Inter";
@@ -172,12 +188,11 @@
         }
 
         p {
-            font-family: "Inter";
-            font-weight: 400;
-            font-size: 15px;
-            // line-height: 30px;
-            color: #1b263b;
-            
+          font-family: "Inter";
+          font-weight: 400;
+          font-size: 15px;
+          // line-height: 30px;
+          color: #1b263b;
         }
       }
 
