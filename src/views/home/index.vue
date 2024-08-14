@@ -34,7 +34,20 @@
     <div class="section">
       <div class="info--container">
         <div class="left--info">
-          <div class="left--info__header">
+          <div class="content">
+            <h1>Crystal Clear Communication</h1>
+            <p>
+              Experience high-definition video and audio quality that makes
+              every conversation feel like you're in the same room. Our advanced
+              adaptive streaming technology ensures crystal-clear communication,
+              even in less-than-ideal network conditions. Say goodbye to
+              pixelated faces and choppy audio
+            </p>
+            <div class="main--head--button--wrapper">
+              <button>learn more</button>
+            </div>
+          </div>
+          <!-- <div class="left--info__header">
             <h2>Crystal Clear Communication</h2>
           </div>
           <div class="left--info__sub">
@@ -47,13 +60,12 @@
             </p>
           </div>
           <div class="main--head--button--wrapper">
-              <button>Get started for free</button>
-            </div>
+            <button>learn more</button>
+          </div> -->
         </div>
-        <div class="right-info">
+
         <div class="image--wrap">
-          <img src="../../assets/images/info.png" alt="info-img">
-        </div>
+          <img src="../../assets/images/info.png" alt="info-img" />
         </div>
       </div>
     </div>

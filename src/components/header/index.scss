@@ -11,13 +11,13 @@
       height: 80px;
       margin: auto;
       max-width: 2520px;
-      padding-inline-end: 80px;
-      padding-inline-start: 80px;
-      @include breakpoint-custom-down(1200) {
-        height: 80px;
-        padding-inline-end: 40px;
-        padding-inline-start: 40px;
-      }
+      padding-inline-end: 40px;
+      padding-inline-start: 40px;
+      // @include breakpoint-custom-down(1200) {
+      //   height: 80px;
+      //   padding-inline-end: 40px;
+      //   padding-inline-start: 40px;
+      // }
       li {
         list-style: none;
         list-style-type: none;

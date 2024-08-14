@@ -53,7 +53,9 @@
     // .main--bg--image {
     .image--inner--wrapper {
       // max-width: 300px;
-      width: 90%;
+      //   width: 90%;
+      padding-inline-end: 40px;
+      padding-inline-start: 40px;
       max-width: 1400px;
       margin: 0 auto;
       img {
@@ -63,46 +65,82 @@
       }
     }
   }
-  .info--container {
-    display: flex;
-    align-items: center;
+
+  .section {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .info--container {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // margin: 4rem 0;
+    // padding-inline-end: 40px;
+    // padding-inline-start: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
     .left--info {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      width: 47%;
-      margin-right: 3%;
-      .left--info__header {
-        h2 {
-          font-family: "Inter";
-          font-weight: 700;
-          font-size: 32px;
-          line-height: 40px;
-          color: #1b263b;
-        }
+      //   display: flex;
+      //   align-items: flex-start;
+      //   flex-direction: column;
+      //   width: 47%;
+      flex: 1;
+      max-width: 500px;
+      padding: 1rem;
+      //   margin-right: 3%;
+      //   .left--info__header {
+      //     h2 {
+      //       font-family: "Inter";
+      //       font-weight: 700;
+      //       font-size: 32px;
+      //       line-height: 40px;
+      //       color: #1b263b;
+      //     }
+      //   }
+      //   .left--info__sub {
+      //     padding-top: 1.5rem;
+      //     padding-bottom: 2.5rem;
+      //     p {
+      //       font-family: "Inter";
+      //       font-weight: 400;
+      //       font-size: 20px;
+      //       line-height: 30px;
+      //       color: #1b263b;
+      //     }
+      //   }
+      h1 {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #1b263b;
+        margin-bottom: 1rem;
       }
-      .left--info__sub {
-        p {
-          font-family: "Inter";
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 30px;
-        }
+
+      p {
+        margin-bottom: 1.5rem;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1b263b;
       }
     }
     .right-info {
-      width: 47%;
-      margin-left: 3%;
+      //   width: 47%;
+      //   margin-left: 3%;
       .image--wrap {
         width: 47%;
-        margin-left: 3%;
+        // margin-left: 3%;
         img {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
+          //   object-fit: cover;
+          //   height: 100%;
+          //   width: 100%;
         }
       }
     }
