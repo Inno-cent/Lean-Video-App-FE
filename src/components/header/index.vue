@@ -30,7 +30,7 @@
 
         <div class="header--auth--buttons">
           <div class="login">
-            <p>Log in</p>
+            <li>Log in</li>
           </div>
           <div class="sign-up">
             <button>Sign up</button>

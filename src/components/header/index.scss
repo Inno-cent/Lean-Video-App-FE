@@ -1,9 +1,41 @@
 .header--wrapper {
   header {
     .header--inner {
+      // display: flex;
+      // align-items: center;
+      // flex
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      margin: auto;
+      max-width: 2520px;
+      padding-inline-end: 80px;
+      padding-inline-start: 80px;
+      @include breakpoint-custom-down(1200) {
+        height: 80px;
+        padding-inline-end: 40px;
+        padding-inline-start: 40px;
+      }
+      li {
+        list-style: none;
+        list-style-type: none;
+        font-family: Inter;
+        font-weight: 400;
+        size: 18px;
+        line-height: 27px;
+        color: #fff;
+        margin: 0px 15px;
+      }
       .header--logo {
         .logo--wrapper {
+          img {
+            display: block;
+            height: 100%;
+            max-width: 100px;
+            text-indent: -1000em;
+            width: 100%;
+          }
         }
       }
       .header--menu {
@@ -12,17 +44,11 @@
           flex-direction: row;
 
           .menu--list {
-            li {
-              list-style: none;
-              list-style-type: none;
-              font-family: Inter;
-              font-weight: 400;
-              size: 18px;
-              line-height: 27px;
-              color: #fff;
-            }
           }
         }
+      }
+      .header--auth--buttons {
+        display: flex;
       }
     }
   }

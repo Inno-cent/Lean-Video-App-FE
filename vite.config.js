@@ -9,20 +9,34 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@layout': path.resolve(__dirname, 'src/layout/'),
-      '@components': path.resolve(__dirname, 'src/components/'),
-      '@views': path.resolve(__dirname, 'src/views/'),
-      '@': path.resolve(__dirname, 'src/'),
-      '@assets': path.resolve(__dirname, 'src/assets/'),
-      '@service': path.resolve(__dirname, 'src/service/'),
-      '@store': path.resolve(__dirname, 'src/store/'),
-      '@utils': path.resolve(__dirname, 'src/utils/'),
-      '@guard': path.resolve(__dirname, 'src/router/guard/')
+      '@layout': resolve(__dirname, 'src/layout/'),
+      '@components': resolve(__dirname, 'src/components/'),
+      '@views': resolve(__dirname, 'src/views/'),
+      '@': resolve(__dirname, 'src/'),
+      '@assets': resolve(__dirname, 'src/assets/'),
+      '@service': resolve(__dirname, 'src/service/'),
+      '@store': resolve(__dirname, 'src/store/'),
+      '@utils': resolve(__dirname, 'src/utils/'),
+      '@guard': resolve(__dirname, 'src/router/guard/')
+    }
+  },
+  css: {
+    extract: {
+      ignoreOrder: true
+    },
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "@/assets/scss/_variables.scss";
+          @import "@/assets/scss/_mixins.scss";
+          @import "@/assets/scss/_breakpoint.scss";`
+      }
     }
   }
 })
