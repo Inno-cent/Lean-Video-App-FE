@@ -146,6 +146,51 @@
     justify-content: center;
     margin: 4rem 0rem;
   }
+  .outer-container {
+    // background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem; /* Add space between the two containers */
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #d9d9d9;
+      padding: 1rem;
+      gap: 1rem;
+
+      .content {
+        h1 {
+          font-family: "Inter";
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+          color: #1b263b;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 15px;
+            // line-height: 30px;
+            color: #1b263b;
+            
+        }
+      }
+
+      .image {
+        img {
+          width: 100%;
+          height: auto;
+          max-width: 300px; /* Adjust as needed */
+          border-radius: 8px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 // }

@@ -94,8 +94,11 @@
       <div class="outer-container">
         <div class="container">
           <div class="content">
-            <h1>Heading 1</h1>
-            <p>Subtext for the first container.</p>
+            <h1>High-Quality Video & Audio</h1>
+            <p>
+              Experience clear, high-definition video and crisp audio for every
+              call
+            </p>
           </div>
           <div class="image">
             <img src="../../assets/images/ex2.png" alt="Image 1" />
@@ -107,8 +110,10 @@
             <img src="@assets/images/ex1.png" alt="Image 2" />
           </div>
           <div class="content">
-            <h1>Heading 2</h1>
-            <p>Subtext for the second container.</p>
+            <h1>Easy Contact Management</h1>
+            <p>
+              Effortlessly add, search, and import contacts for quick access
+            </p>
           </div>
         </div>
       </div>
