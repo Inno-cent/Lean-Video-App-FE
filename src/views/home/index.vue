@@ -23,10 +23,37 @@
           </div>
 
           <!-- <div class="main--bg--image"> -->
-            <div class="image--inner--wrapper">
-              <img src="../../assets/images/bg.svg" alt="bg-image">
-            </div>
+          <div class="image--inner--wrapper">
+            <img src="../../assets/images/bg.svg" alt="bg-image" />
+          </div>
           <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="info--container">
+        <div class="left--info">
+          <div class="left--info__header">
+            <h2>Crystal Clear Communication</h2>
+          </div>
+          <div class="left--info__sub">
+            <p>
+              Experience high-definition video and audio quality that makes
+              every conversation feel like you're in the same room. Our advanced
+              adaptive streaming technology ensures crystal-clear communication,
+              even in less-than-ideal network conditions. Say goodbye to
+              pixelated faces and choppy audio
+            </p>
+          </div>
+          <div class="info--btn">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="right-info">
+        <div class="image--wrap">
+          <img src="../../assets/images/info.png" alt="info-img">
+        </div>
         </div>
       </div>
     </div>

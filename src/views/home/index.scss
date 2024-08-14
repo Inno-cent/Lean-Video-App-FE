@@ -6,11 +6,11 @@
       #0d1b2a 196.2deg,
       #166bc6 360deg
     );
-    height: 1024px;
+    // height: 1024px;
   }
   .main--head--text--wrapper {
     margin: auto;
-    max-width: 2520px;
+    // max-width: 2520px;
     color: #fff;
     .head--text--innner {
       display: flex;
@@ -61,6 +61,36 @@
         width: 100%;
         height: auto;
       }
+    }
+  }
+  .info--container {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    .left--info {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      .left--info__header {
+        h2 {
+          font-family: "Inter";
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 40px;
+          color: #1b263b;
+        }
+      }
+      .left--info__sub {
+        p {
+          font-family: "Inter";
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+    }
+    .right-info {
     }
   }
 }
