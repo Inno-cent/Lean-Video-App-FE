@@ -2,7 +2,26 @@
   <div class="landing--page--container">
     <div class="landing--page--inner">
       <div class="section">
-        <Header />
+        <div class="header--comp--wrapper">
+          <Header />
+        </div>
+        <div class="main--head--text--wrapper">
+          <div class="head--text--innner">
+            <div class="head--text--content">
+              <h2>One platform. Limitless connection.</h2>
+            </div>
+            <div class="sub--head--text">
+              <p>
+                Whether you are on your phone, tablet, or computer, experience
+                seamless calls across all your devices. No complicated setup or
+                configuration - just connect and go.
+              </p>
+            </div>
+            <div class="main--head--button--wrapper">
+              <button>Get started for free</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
