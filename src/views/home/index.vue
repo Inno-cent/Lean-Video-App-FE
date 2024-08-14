@@ -63,8 +63,7 @@
             <button>learn more</button>
           </div> -->
         </div>
-
-        <div class="image--wrap">
+        <div class="image">
           <img src="../../assets/images/info.png" alt="info-img" />
         </div>
       </div>
