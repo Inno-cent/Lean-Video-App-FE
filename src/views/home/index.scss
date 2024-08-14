@@ -11,5 +11,20 @@
   .main--head--text--wrapper {
     margin: auto;
     max-width: 2520px;
+    color: #FFF;
+    .head--text--innner {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 1.5rem 10px 2rem;
+      .head--text--content {
+        h2 {
+          font-family: "Inter";
+          font-weight: 700;
+          font-size: 48px;
+          text-align: center;
+        }
+      }
+    }
   }
 }
