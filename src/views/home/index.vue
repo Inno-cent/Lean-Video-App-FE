@@ -118,6 +118,21 @@
         </div>
       </div>
     </div>
+
+    <div class="section">
+      <div class="explore--container">
+        <h1 class="landing--header">Cross-Platform Compatibility</h1>
+        <p class="landing--subtext">
+          Whether you're on your computer, tablet, or smartphone, stay connected
+          with Lean.
+        </p>
+      </div>
+      <div class="platform--image--wrapper">
+        <div class="image--inner--wrapper">
+          <img src="../../assets/images/platform.png" alt="">
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
