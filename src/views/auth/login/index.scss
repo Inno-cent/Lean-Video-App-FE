@@ -20,12 +20,21 @@
     .form--head-text {
       text-align: center;
       h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        color: #1b263b;
+        font-family: 'Inter';
+        font-size: 25px;
+        font-weight: 700;
+        // line-height: 40px;
+        // margin-bottom: .5rem;
       }
       p {
-        font-size: 1rem;
+        color: #1b263b;
+        font-family: 'Inter';
+        font-size: 18px;
+        font-weight: 400;
+        // line-height: 40px;
         margin-bottom: 2rem;
+        
       }
     }
   }
