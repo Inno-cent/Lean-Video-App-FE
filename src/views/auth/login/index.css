@@ -120,4 +120,26 @@ button[type=submit] {
   font-size: 1rem;
   color: #333; /* Text color */
   white-space: nowrap;
+}
+
+.google-signup--wrapper {
+  margin-bottom: 4rem;
+}
+.google-signup--wrapper .inner {
+  border: 1px solid rgba(119, 141, 169, 0.5019607843);
+  border-radius: 10px;
+  padding: 15px 26px;
+}
+.google-signup--wrapper .inner .inner--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.google-signup--wrapper .inner .inner--container .logo {
+  margin: 0 1rem;
+}
+.google-signup--wrapper .inner .inner--container .text {
+  color: #1b263b;
+  font-size: 15px;
+  margin: 0 1rem;
 }/*# sourceMappingURL=index.css.map */

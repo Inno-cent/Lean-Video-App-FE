@@ -53,6 +53,11 @@
                 </div>
             </div>
         </div>
+        <div class="d34rgfd">
+            <div class="acct--text">
+                Don’t have an account? Create an account
+            </div>
+        </div>
       </form>
     </div>
   </div>
