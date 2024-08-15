@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-        <button type="submit">Sign Up</button>
+        <button class="form--submit--button" >Sign Up</button>
         <div class="divider">
           <span class="divider-text">Or</span>
         </div>
@@ -85,4 +85,4 @@ export default {
     
     <style lang="scss">
 @import "../index.scss";
-</style>/
+</style>

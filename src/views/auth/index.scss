@@ -26,6 +26,9 @@
     }
     .form--head-text {
       text-align: center;
+      &.forgot{
+        text-align: left;
+      }
       h1 {
         color: #1b263b;
         font-family: "Inter";
@@ -63,7 +66,7 @@
   border-radius: 4px;
 }
 
-button[type="submit"] {
+.form--submit--button {
   padding: 0.75rem;
   font-size: 15px;
   background: #415a77;
@@ -169,3 +172,4 @@ button[type="submit"] {
     }
   }
 }
+

@@ -37,26 +37,24 @@
             <div class="forget--password">Forget password?</div>
           </div>
         </div>
-        <button type="submit">Log in</button>
+        <button class="form--submit--button">Log in</button>
         <div class="divider">
           <span class="divider-text">Or</span>
         </div>
         <div class="google-signup--wrapper">
-            <div class="inner">
-                <div class="inner--container">
-                    <div class="logo">
-                        <img src="../../../assets/images/Google.png" alt="">
-                    </div>
-                    <div class="text">
-                        Continue with Google
-                    </div>
-                </div>
+          <div class="inner">
+            <div class="inner--container">
+              <div class="logo">
+                <img src="../../../assets/images/Google.png" alt="" />
+              </div>
+              <div class="text">Continue with Google</div>
             </div>
+          </div>
         </div>
         <div class="d34rgfd">
-            <div class="acct--text">
-                Don’t have an account? Create an account
-            </div>
+          <div class="acct--text">
+            Don’t have an account? <span>Create an account</span>
+          </div>
         </div>
       </form>
     </div>

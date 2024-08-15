@@ -1,0 +1,47 @@
+.er34esd {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  .forget--password--container {
+    width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    box-shadow: 0px 4px 20px 0px #00000040;
+
+    .forgot--inner--wrapper {
+      padding: 2rem;
+      .wee23e {
+        .header--twxt {
+          h1 {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .reset--input--wrapper {
+      margin: 2rem 0;
+    }
+    .reset--btn-wrap {
+      .reset--button {
+        padding: 0.75rem;
+        font-size: 15px;
+        background: #415a77;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}
