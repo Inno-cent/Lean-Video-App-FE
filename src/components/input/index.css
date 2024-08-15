@@ -23,7 +23,7 @@ input {
   font-size: 15px;
   border-radius: 4px;
   outline: none;
-  border: 1px solid #778da980;
+  border: 1px solid rgba(119, 141, 169, 0.5019607843);
 }
 
 .icon {
@@ -31,11 +31,7 @@ input {
   right: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
-  // width: 20px;
-  // height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
+}/*# sourceMappingURL=index.css.map */
