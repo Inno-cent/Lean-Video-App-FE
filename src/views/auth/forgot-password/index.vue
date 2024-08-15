@@ -14,6 +14,11 @@
             <button class="reset--button">Send reset link</button>
           </div>
         </div>
+        <div class="d34rgfd2">
+          <div class="acct--textq">
+           Have your password? <span>Log in</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
