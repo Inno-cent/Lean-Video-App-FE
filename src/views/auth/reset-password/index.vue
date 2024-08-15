@@ -8,10 +8,10 @@
             <p>Enter your new password below to reset your password.</p>
           </div>
           <div class="reset--input--wrapper">
-            <Input label="Email" placeholder="New Password" />
+            <Input label="New Password" placeholder="......." />
           </div>
           <div class="reset--input--wrapper">
-            <Input label="Email" placeholder="Re-enter New Password" />
+            <Input label="Re-enter New Password" placeholder="........" />
           </div>
           <div class="reset--btn-wrap">
             <button class="reset--button">Send reset link</button>
@@ -40,3 +40,7 @@ export default {
   methods: {},
 };
 </script>
+
+<style scoped lang="scss">
+@import "../forgot-password/index.scss";
+</style>

@@ -171,6 +171,25 @@
         </div>
       </div>
     </div>
+
+    <div class="FAQ-outer--container">
+      <div class="faq--inner">
+        <div class="faq--left">
+          <div class="faq--left__text">
+            <h4>NeedHelp</h4>
+            <p>Get quick solutions and answers to common questions about using our video calling app efficiently</p>
+          </div>
+          <div class="faq--left__image">
+            <img src="../../assets/images/faq.png" alt="">
+          </div>
+        </div>
+        <div class="faq--right">
+          <div class="faq--right--header">
+            <h2>FAQ'S</h2>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
