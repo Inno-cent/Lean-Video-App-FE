@@ -21,6 +21,10 @@
     padding-inline-start: 40px;
     max-width: 1400px;
     margin: 0 auto;
+    &.platfrom {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     img {
       object-fit: cover;
       width: 100%;
@@ -221,5 +225,85 @@
   .platform--image--wrapper {
     background: #d9d9d980;
   }
+
+  .testimony-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container on the page */
+    gap: 2rem;
+
+    .image-container {
+      flex: 0 0 45%; /* Take up 45% of the container width */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+
+    .text-container {
+      flex: 1; /* Take up the remaining space */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    //   text-align: center;
+      .quote--marks {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        // line-height: 30px;
+        &::before {
+          color: #1b263b;
+          padding-bottom: 2rem;
+        }
+        &::after {
+          padding-top: 2rem;
+          color: #1b263b;
+        }
+      }
+      .user-name {
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 3rem; /* Space between name and carousel arrows */
+        font-size: 18px;
+        line-height: 48px;
+      }
+      .carousel-arrows {
+        display: flex;
+        gap: 1rem;
+        .arrow-left,
+        .arrow-right {
+          cursor: pointer;
+          font-size: 1.5rem;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  //   @media (max-width: 768px) {
+  //     .testimony-container {
+  //       flex-direction: column;
+  //       text-align: center;
+
+  //       .image-container {
+  //         width: 100%;
+  //       }
+
+  //       .text-container {
+  //         .carousel-arrows {
+  //           margin-top: 1rem;
+  //         }
+  //       }
+  //     }
+  //   }
 }
 // }
