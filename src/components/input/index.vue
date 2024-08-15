@@ -4,7 +4,18 @@
     <div class="input-container">
       <input :placeholder="placeholder" />
       <div class="icon" v-if="icon">
-        <img :src="icon" alt="Icon" />
+        <svg
+          width="20"
+          height="16"
+          viewBox="0 0 20 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            :d="icon"
+            fill="#1B263B"
+          />
+        </svg>
       </div>
     </div>
   </div>
