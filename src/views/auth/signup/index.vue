@@ -34,10 +34,9 @@
               </div>
               <div class="remember--text">I Agree with terms & condition</div>
             </div>
-           
           </div>
         </div>
-        <button type="submit">Log in</button>
+        <button type="submit">Sign Up</button>
         <div class="divider">
           <span class="divider-text">Or</span>
         </div>
@@ -52,7 +51,9 @@
           </div>
         </div>
         <div class="d34rgfd">
-          <div class="acct--text">Don’t have an account? Create an account</div>
+          <div class="acct--text">
+            Already have an account? <span>Create an account</span>
+          </div>
         </div>
       </form>
     </div>
