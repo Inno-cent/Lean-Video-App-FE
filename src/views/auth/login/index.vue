@@ -37,7 +37,22 @@
             <div class="forget--password">Forget password?</div>
           </div>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Log in</button>
+        <div class="divider">
+          <span class="divider-text">Or</span>
+        </div>
+        <div class="google-signup--wrapper">
+            <div class="inner">
+                <div class="inner--container">
+                    <div class="logo">
+                        <img src="../../../assets/images/Google.png" alt="">
+                    </div>
+                    <div class="text">
+                        Continue with Google
+                    </div>
+                </div>
+            </div>
+        </div>
       </form>
     </div>
   </div>
