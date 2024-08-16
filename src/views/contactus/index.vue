@@ -76,7 +76,7 @@
             </div>
             <div class="part--contact">
               <div class="double--input">
-                <div class="input">
+                <div class="input first">
                   <input type="text" name="" id="" placeholder="Firstname" />
                 </div>
                 <div class="input">
@@ -85,7 +85,7 @@
               </div>
 
               <div class="double--input">
-                <div class="input">
+                <div class="input first">
                   <input type="text" name="" id="" placeholder="Email" />
                 </div>
                 <div class="input">
