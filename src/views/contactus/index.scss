@@ -1,4 +1,12 @@
 .contact--page--container {
+  input,
+  textarea {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 18px;
+  }
   .contact--page--container__inner {
     .contact--section--container {
       background: #0d1b2a;
@@ -42,12 +50,12 @@
               }
             }
           }
-          .double--input{
+          .double--input {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-            .input{
-                
+            gap: 1rem;
+            .input {
             }
           }
         }
