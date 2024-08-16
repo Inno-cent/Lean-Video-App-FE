@@ -347,32 +347,32 @@
     }
   }
 
-  .pricing--seection{
+  .pricing--seection {
     background-color: #fff;
-    background-image: url('../../assets/images/pricebg.png'); 
+    background-image: url('../../assets/images/pricebg.png');
     background-size: cover;
     background-position: center;
-    height: 500px; 
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
     .pricing-background-container {
     }
-    
+
     .content-container {
       text-align: center;
       padding: 2rem;
-    font-family: 'Inter';
-    
+      font-family: 'Inter';
+
       .head-text {
-       font-size: 30px;
-       line-height: 40px;
-       font-weight: 700;
-       margin-bottom: 1.5rem;
-        color: #1B263B;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #1b263b;
       }
-    
+
       .sub-text {
         line-height: 30px;
         font-size: 20px;

@@ -216,11 +216,15 @@
       </div>
     </div>
   </div>
+  <div class="section">
+    <Footer/>
+  </div>
 </template>
 
 <script>
 import Header from '@components/header/index.vue';
 import Accordion from '@components/accordion/index.vue';
+import Footer from "@components/footer/index.vue"
 export default {
   name: 'Home',
   data() {
@@ -254,6 +258,7 @@ export default {
   components: {
     Header,
     Accordion,
+    Footer
   },
 };
 </script>
