@@ -1,0 +1,38 @@
+.faq--inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem;
+    .faq--left {
+      flex: 1;
+      padding: 2rem;
+      .faq--left__text {
+        font-family: 'inter';
+        color: #fff;
+        margin-bottom: 3rem;
+        h1 {
+          font-size: 28px;
+          font-weight: 700;
+          color: #fff;
+        }
+        p {
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+      .faq--left__image {
+      }
+    }
+    .faq--right {
+      flex: 1;
+      .faq--right--header {
+        margin-bottom: 2rem;
+        h2 {
+          font-family: 'Inter';
+          font-size: 40px;
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+    }
+  }

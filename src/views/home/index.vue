@@ -280,37 +280,12 @@
 
 <script>
 import Header from '@components/header/index.vue';
-import Accordion from '@components/accordion/index.vue';
+
 import Footer from '@components/footer/index.vue';
 export default {
   name: 'Home',
   data() {
-    return {
-      accordionItems: [
-        {
-          title: 'How do I start a video call?',
-          content:
-            'Select a contact from your list and click the video call icon to initiate the call immediately.',
-        },
-        {
-          title: 'Can I use the app on multiple devices?',
-          content: 'This is the content for item 2.',
-        },
-        {
-          title: 'Is my video call secure?',
-          content: 'This is the content for item 3.',
-        },
-        {
-          title: 'How do I add contacts?',
-          content: 'This is the content for item 4.',
-        },
-        {
-          title: 'What should I do if I encounter connection issues?',
-          content: 'This is the content for item 5.',
-        },
-        // Add more items dynamically
-      ],
-    };
+   
   },
   components: {
     Header,
