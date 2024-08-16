@@ -8,7 +8,7 @@
       <section class="contact--section--container">
         <div class="contact--section">
           <div class="contact--section--inner">
-            <div class="left--contact">
+            <div class="part--contact">
               <div class="left--head--text">
                 <h4>Get in Touch</h4>
                 <p>
@@ -72,6 +72,29 @@
                   </div>
                   <div class="text">Location</div>
                 </div>
+              </div>
+            </div>
+            <div class="part--contact">
+              <div class="double--input">
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="Firstname" />
+                </div>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="Lastname" />
+                </div>
+              </div>
+
+              <div class="double--input">
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="Email" />
+                </div>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="Phonenumber" />
+                </div>
+              </div>
+
+              <div class="textarea-wrap">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
               </div>
             </div>
           </div>
