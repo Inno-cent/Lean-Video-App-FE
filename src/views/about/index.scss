@@ -52,24 +52,24 @@
       }
     }
   }
-  .contact--section--container {
+  .mission--section--container {
     background: #0d1b2a;
     display: flex;
     justify-content: center;
     align-items: center;
     //   padding: 3rem;
-    .contact--section {
+    .mission--section {
       display: flex;
       flex-wrap: wrap;
       gap: 3rem;
       width: 1400px;
       margin: 0 auto;
       // padding: 40px;
-      .contact--section--inner {
+      .mission--section--inner {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        .part--contact {
+        .part--mission {
           flex: 1 1 45%;
           display: flex;
           flex-direction: column;
@@ -89,9 +89,9 @@
               line-height: 30px;
             }
           }
-          .left--contact--info {
+          .left--mission--info {
             margin-top: 3rem;
-            .contact--info--wrap {
+            .mission--info--wrap {
               display: flex;
               align-items: center;
               justify-content: flex-start;
