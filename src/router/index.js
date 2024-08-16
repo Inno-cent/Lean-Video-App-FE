@@ -6,6 +6,8 @@ import Forgotpassword from "@views/auth/forgot-password/index.vue"
 import ResetPassword from "../views/auth/reset-password/index.vue"
 import FAQ from "../views/faq/index.vue"
 import Contact from "../views/contactus/index.vue"
+import Contact from "../views/contactus/index.vue"
+
 
 const routes = [
   {
@@ -42,6 +44,11 @@ const routes = [
     path: '/contact-us',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About
   },
 ];
 

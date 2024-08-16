@@ -23,7 +23,7 @@
 
           <!-- <div class="main--bg--image"> -->
           <div class="image--inner--wrapper">
-            <img src="../../assets/images/bg.svg" alt="bg-image" />
+            <img src="../../assets/images/aboutimage.png" alt="bg-image" />
           </div>
           <!-- </div> -->
         </div>
