@@ -173,6 +173,7 @@
     </div>
 
     <div class="FAQ-outer--container">
+      <div class="section">
       <div class="faq--inner">
         <div class="faq--left">
           <div class="faq--left__text">
@@ -187,7 +188,11 @@
           <div class="faq--right--header">
             <h2>FAQ'S</h2>
           </div>
+          <div class="accordion--section--wrapper">
+            <Accordion :items="accordionItems" />
+          </div>
         </div>
+      </div>
       </div>
     </div>
   </div>
@@ -195,10 +200,32 @@
 
 <script>
 import Header from "@components/header/index.vue";
+import Accordion from "@components/accordion/index.vue"
 export default {
   name: "Home",
+  data(){
+    return {
+      accordionItems: [
+        {
+          title: 'Accordion Item 1',
+          content: 'This is the content for item 1.',
+        },
+        {
+          title: 'Accordion Item 2',
+          content: 'This is the content for item 2.',
+        },
+        {
+          title: 'Accordion Item 3',
+          content: 'This is the content for item 3.',
+        },
+        // Add more items dynamically
+      ],
+    };
+
+  },
   components: {
     Header,
+    Accordion
   },
 };
 </script>
