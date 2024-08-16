@@ -4,6 +4,7 @@ import Login from "@/views/auth/login/index.vue"
 import Signup from "@/views/auth/signup/index.vue"
 import Forgotpassword from "@views/auth/forgot-password/index.vue"
 import ResetPassword from "../views/auth/reset-password/index.vue"
+import FAQ from "../views/faq/index.vue"
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/reset-password',
     name: 'Resetpassword',
     component: ResetPassword
+  },
+  {
+    path: '/FAQ',
+    name: 'FAQ',
+    component: FAQ
   },
 ];
 

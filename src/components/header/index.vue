@@ -4,33 +4,60 @@
       <div class="header--inner">
         <div class="header--logo">
           <div class="logo--wrapper">
-            <img src="../../assets/images/Group 2.svg" alt="logo" />
+            <img
+              v-if="!isLightMode"
+              src="../../assets/images/Group 2.svg"
+              alt="logo"
+            />
+            <img v-else src="../../assets/images/dark-logo.svg" alt="logo" />
           </div>
         </div>
 
         <div class="header--menu">
           <div class="header--menu__inner">
             <div class="menu--list">
-              <li>About</li>
+              <li
+                :class="['header--list--item', { 'light-mode': isLightMode }]"
+              >
+                About
+              </li>
             </div>
             <div class="menu--list">
-              <li>Features</li>
+              <li
+                :class="['header--list--item', { 'light-mode': isLightMode }]"
+              >
+                Features
+              </li>
             </div>
             <div class="menu--list">
-              <li>Pricing</li>
+              <li
+                :class="['header--list--item', { 'light-mode': isLightMode }]"
+              >
+                Pricing
+              </li>
             </div>
             <div class="menu--list">
-              <li>Learn</li>
+              <li
+                :class="['header--list--item', { 'light-mode': isLightMode }]"
+              >
+                Learn
+              </li>
             </div>
             <div class="menu--list">
-              <li>Get help</li>
+              <li
+                :class="['header--list--item', { 'light-mode': isLightMode }]"
+              >
+                Get help
+              </li>
             </div>
           </div>
         </div>
 
         <div class="header--auth--buttons">
           <div class="login">
-            <li>Log in</li>
+            <li :class="['header--list--item', { 'light-mode': isLightMode }]">
+              Log in
+            </li>
           </div>
           <div class="sign-up">
             <button>Sign up</button>

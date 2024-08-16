@@ -22,7 +22,7 @@
       //   padding-inline-end: 40px;
       //   padding-inline-start: 40px;
       // }
-      li {
+      .header--list--item {
         list-style: none;
         list-style-type: none;
         font-family: 'Inter';
@@ -31,6 +31,10 @@
         line-height: 27px;
         color: #fff;
         margin: 0px 15px;
+        &.light-mode {
+          background-color: #fff;
+          color: #1b263b;
+        }
       }
       .header--logo {
         .logo--wrapper {

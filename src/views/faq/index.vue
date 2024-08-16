@@ -6,9 +6,15 @@
       </div>
 
       <section class="faq--section">
-        <!-- <div class="faq--top--text"></div> -->
+        <div class="faq--top--text">
+          <h3>NeedHelp</h3>
+          <p>
+            Get quick solutions and answers to common questions about using our
+            video calling app efficiently
+          </p>
+        </div>
         <div class="faq--section--container">
-          <FAQ />
+          <FAQsection />
         </div>
       </section>
 
@@ -27,16 +33,20 @@
 <script>
 import Header from '@components/header/index.vue';
 import Connect from '../../components/connectsection/index.vue';
-import FAQ from '@components/faq/index.vue';
+import FAQsection from '@components/faq/index.vue';
 import Footer from '@components/footer/index.vue';
 export default {
-  name: 'Home',
+  name: 'FAQ',
   data() {},
   components: {
     Header,
     Footer,
-    FAQ,
+    FAQsection,
     Connect,
   },
 };
 </script>
+
+<style lang="scss">
+@import './index.scss';
+</style>
