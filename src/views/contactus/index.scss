@@ -10,6 +10,9 @@
     font-family: 'Inter';
     font-size: 18px;
     padding: 10px 15px;
+    &.textarea {
+      width: 100%;
+    }
   }
   .main--head--button--wrapper {
     .info--btn {
@@ -24,7 +27,7 @@
       align-items: center;
       text-align: center;
       color: #fff;
-       width: 100%;
+      width: 100%;
     }
   }
   .contact--page--container__inner {
@@ -33,7 +36,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    //   padding: 3rem;
+      //   padding: 3rem;
       .contact--section {
         display: flex;
         flex-wrap: wrap;

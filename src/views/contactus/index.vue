@@ -95,6 +95,7 @@
 
               <div class="textarea-wrap">
                 <textarea
+                class="textarea"
                   name=""
                   id=""
                   cols="30"
