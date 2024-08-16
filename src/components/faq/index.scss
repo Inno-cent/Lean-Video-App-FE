@@ -1,38 +1,51 @@
 .faq--inner {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 3rem;
-    .faq--left {
-      flex: 1;
-      padding:0 2rem;
-      .faq--left__text {
-        font-family: 'inter';
-        color: #fff;
-        margin-bottom: 3rem;
-        h1 {
-          font-size: 28px;
-          font-weight: 700;
-          color: #fff;
-        }
-        p {
-          font-size: 18px;
-          color: #fff;
-        }
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem;
+  @include breakpoint-custom-down(850){
+    padding: 1rem;
+  }
+  .faq--left {
+    flex: 1;
+    padding: 0 2rem;
+    @include breakpoint-custom-down(774){
+        display: none;
+
       }
-      .faq--left__image {
+    .faq--left__text {
+      font-family: 'inter';
+      color: #fff;
+      margin-bottom: 3rem;
+      h1 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #fff;
+      }
+      p {
+        font-size: 18px;
+        color: #fff;
       }
     }
-    .faq--right {
-      flex: 1;
-      .faq--right--header {
-        margin-bottom: 2rem;
-        h2 {
-          font-family: 'Inter';
-          font-size: 40px;
-          font-weight: 700;
-          color: #fff;
-        }
+    .faq--left__image {
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
       }
     }
   }
+  .faq--right {
+    flex: 1;
+    .faq--right--header {
+      margin-bottom: 2rem;
+      h4 {
+        font-family: 'Inter';
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@
     </div>
     <div class="faq--right">
       <div class="faq--right--header">
-        <h2>FAQ'S</h2>
+        <h4>FAQ'S</h4>
       </div>
       <div class="accordion--section--wrapper">
         <Accordion :items="accordionItems" />
