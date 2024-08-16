@@ -78,6 +78,63 @@
           video calls
         </p>
       </div>
+      <div class="we34r">
+        <div class="wetgf4f">
+          <div class="box">
+            <div class="image--wrapper">
+              <img
+                src="../../assets//images/createacct.png"
+                alt="create--account"
+              />
+            </div>
+            <div class="box--text">
+              <div class="main--text">
+                <h3>Create your account</h3>
+                <p>
+                  Sign up for free to access seamless video calling features and
+                  start connecting with ease today
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image--wrapper">
+              <img
+                src="../../assets//images/addcct.png"
+                alt="create--account"
+              />
+            </div>
+            <div class="box--text">
+              <div class="main--text">
+                <h3>Add Contacts</h3>
+                <p>
+                  Quickly add contacts and start high-definition video or audio
+                  calls with a single click
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image--wrapper">
+              <img
+                src="../../assets//images/startcall.png"
+                alt="create--account"
+              />
+            </div>
+            <div class="box--text">
+              <div class="main--text">
+                <h3>Start a call</h3>
+                <p>
+                  Click on a contact to instantly start a high-definition video
+                  or audio call with a single click
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section">
@@ -209,7 +266,7 @@
               high-quality video calls
             </p>
             <div class="main--head--button--wrapper">
-              <button >Get started for free</button>
+              <button>Get started for free</button>
             </div>
           </div>
         </div>
@@ -217,14 +274,14 @@
     </div>
   </div>
   <div class="section">
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '@components/header/index.vue';
 import Accordion from '@components/accordion/index.vue';
-import Footer from "@components/footer/index.vue"
+import Footer from '@components/footer/index.vue';
 export default {
   name: 'Home',
   data() {
@@ -258,7 +315,7 @@ export default {
   components: {
     Header,
     Accordion,
-    Footer
+    Footer,
   },
 };
 </script>

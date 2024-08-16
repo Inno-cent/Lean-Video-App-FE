@@ -104,7 +104,7 @@
     <div class="footer--line"></div>
     </div>
     <div class="bottom--footer">
-        <p>copyright&#169; 2024 LeanVideo All Rights Reserved</p>
+        <p>Copyright &#169; 2024 LeanVideo All Rights Reserved</p>
     </div>
   </footer>
 </template>
