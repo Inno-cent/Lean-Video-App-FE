@@ -104,7 +104,7 @@
               </div>
 
               <div class="main--head--button--wrapper info">
-                <button>Submit your information</button>
+                <button class="info--btn">Submit your information</button>
               </div>
             </div>
           </div>

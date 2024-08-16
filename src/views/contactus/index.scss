@@ -11,6 +11,24 @@
     font-size: 18px;
     padding: 10px 15px;
   }
+  .main--head--button--wrapper {
+    &.info{
+        width: 100%;
+    }
+    .info--btn {
+      padding: 10px 30px;
+      background: #415a77;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+  }
   .contact--page--container__inner {
     .contact--section--container {
       background: #0d1b2a;
