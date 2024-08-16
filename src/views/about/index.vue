@@ -103,29 +103,31 @@
                 <div class="box--text">
                   <div class="main--text">
                     <h3>Alex Johnson</h3>
-                    <p>
-                      Founder & CEO
-                    </p>
+                    <p>Founder & CEO</p>
                   </div>
                 </div>
               </div>
 
-           
-
               <div class="box">
                 <div class="image--wrapper">
-                  <img
-                    src="../../assets//images/startcall.png"
-                    alt="create--account"
-                  />
+                  <img src="../../assets/images/team.png" alt="profile" />
                 </div>
                 <div class="box--text">
                   <div class="main--text">
-                    <h3>Start a call</h3>
-                    <p>
-                      Click on a contact to instantly start a high-definition
-                      video or audio call with a single click
-                    </p>
+                    <h3>Alex Johnson</h3>
+                    <p>Founder & CEO</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="image--wrapper">
+                  <img src="../../assets/images/team.png" alt="profile" />
+                </div>
+                <div class="box--text">
+                  <div class="main--text">
+                    <h3>Alex Johnson</h3>
+                    <p>Founder & CEO</p>
                   </div>
                 </div>
               </div>
