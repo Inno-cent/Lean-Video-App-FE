@@ -13,7 +13,7 @@
       </section>
 
       <section class="section">
-        <Connect />
+        <!-- <Connect /> -->
       <!-- </section> -->
 
       <section class="section">
