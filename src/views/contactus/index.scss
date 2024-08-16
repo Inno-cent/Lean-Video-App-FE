@@ -1,6 +1,9 @@
 .contact--page--container {
   input,
   textarea {
+    background: none;
+    outline: none;
+    border: none;
     border: 1px solid #ffffff;
     border-radius: 5px;
     color: #fff;

@@ -99,9 +99,6 @@
             </div>
           </div>
         </div>
-        <div class="contact--section--container">
-          <FAQsection />
-        </div>
       </section>
 
       <section class="section">
