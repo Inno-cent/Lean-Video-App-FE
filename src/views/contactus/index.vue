@@ -102,6 +102,10 @@
                   placeholder="Description"
                 ></textarea>
               </div>
+
+              <div class="main--head--button--wrapper info">
+                <button>Submit your information</button>
+              </div>
             </div>
           </div>
         </div>
