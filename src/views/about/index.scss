@@ -1,20 +1,23 @@
 .about--page--container {
   .about--page--inner {
     .about--section--one {
+      margin: 2rem auto;
+      padding: 40px;
+      width: 1400px;
       .main--head--text--wrapper {
         margin: auto;
         // max-width: 2520px;
-        color: #1B263B;
+        color: #1b263b;
         .head--text--innner {
           display: flex;
           align-items: center;
           flex-direction: column;
-          margin: 5rem 10px 6rem;
+          //   margin: 5rem 10px 6rem;
           .head--text--content {
-            h2 {
+            h4 {
               font-family: 'Inter';
               font-weight: 700;
-              font-size: 48px;
+              font-size: 30px;
               text-align: center;
             }
           }
@@ -29,6 +32,23 @@
           }
         }
         // .main--bg--image {
+      }
+      .image--inner--wrapper {
+        // max-width: 300px;
+        //   width: 90%;
+        padding-inline-end: 40px;
+        padding-inline-start: 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+        &.platfrom {
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }

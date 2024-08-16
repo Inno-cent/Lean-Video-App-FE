@@ -2,13 +2,13 @@
   <div class="about--page--container">
     <div class="about--page--inner">
       <div class="header">
-        <Header />
+        <Header :isLightMode="true"/>
       </div>
       <div class="about--section--one">
         <div class="main--head--text--wrapper">
           <div class="head--text--innner">
             <div class="head--text--content">
-              <h2>One platform. Limitless connection.</h2>
+              <h4>Who We Are</h4>
             </div>
             <div class="sub--head--text">
               <p>
@@ -43,7 +43,6 @@ export default {
   components: {
     Header,
     Footer,
-    FAQsection,
     Connect,
   },
 };

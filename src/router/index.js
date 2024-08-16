@@ -6,7 +6,7 @@ import Forgotpassword from "@views/auth/forgot-password/index.vue"
 import ResetPassword from "../views/auth/reset-password/index.vue"
 import FAQ from "../views/faq/index.vue"
 import Contact from "../views/contactus/index.vue"
-import Contact from "../views/contactus/index.vue"
+import About from "../views/about/index.vue"
 
 
 const routes = [
