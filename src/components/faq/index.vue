@@ -9,7 +9,7 @@
         </p>
       </div>
       <div class="faq--left__image">
-        <img src="../../assets/images/faq.png" alt="" />
+        <img src="@assets/images/faq.png" alt="" />
       </div>
     </div>
     <div class="faq--right">
@@ -28,7 +28,9 @@ export default {
   components: {
     Accordion,
   },
-  accordionItems: [
+  data() {
+    return {
+      accordionItems: [
         {
           title: 'How do I start a video call?',
           content:
@@ -52,8 +54,10 @@ export default {
         },
         // Add more items dynamically
       ],
+    };
+  },
 };
 </script>
 <style lang="scss">
-@import './index.scss';
+@import '../../components/faq/index.scss';
 </style>/

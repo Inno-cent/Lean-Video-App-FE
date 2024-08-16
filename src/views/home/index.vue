@@ -231,7 +231,7 @@
 
     <div class="FAQ-outer--container">
       <div class="section">
-        <div class="faq--inner">
+        <!-- <div class="faq--inner">
           <div class="faq--left">
             <div class="faq--left__text">
               <h4>NeedHelp</h4>
@@ -252,7 +252,8 @@
               <Accordion :items="accordionItems" />
             </div>
           </div>
-        </div>
+        </div> -->
+        <FAQ />
       </div>
     </div>
 
@@ -280,17 +281,15 @@
 
 <script>
 import Header from '@components/header/index.vue';
-
+import FAQ from '@components/faq/index.vue';
 import Footer from '@components/footer/index.vue';
 export default {
   name: 'Home',
-  data() {
-   
-  },
+  data() {},
   components: {
     Header,
-    Accordion,
     Footer,
+    FAQ,
   },
 };
 </script>
