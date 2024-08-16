@@ -110,23 +110,7 @@
                 </div>
               </div>
 
-              <div class="box">
-                <div class="image--wrapper">
-                  <img
-                    src="../../assets//images/addcct.png"
-                    alt="create--account"
-                  />
-                </div>
-                <div class="box--text">
-                  <div class="main--text">
-                    <h3>Add Contacts</h3>
-                    <p>
-                      Quickly add contacts and start high-definition video or
-                      audio calls with a single click
-                    </p>
-                  </div>
-                </div>
-              </div>
+           
 
               <div class="box">
                 <div class="image--wrapper">
