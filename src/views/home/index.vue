@@ -258,7 +258,7 @@
     </div>
 
     <div class="section">
-      <div class="pricing--seection">
+      <!-- <div class="pricing--seection">
         <div class="pricing-background-container">
           <div class="content-container">
             <h1 class="head-text">Start Connecting Effortlessly Today</h1>
@@ -271,7 +271,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      <Connect />
     </div>
   </div>
   <div class="section">
@@ -283,6 +284,7 @@
 import Header from '@components/header/index.vue';
 import FAQ from '@components/faq/index.vue';
 import Footer from '@components/footer/index.vue';
+import Connect from '../../components/connectsection/index.vue';
 export default {
   name: 'Home',
   data() {},
@@ -290,10 +292,11 @@ export default {
     Header,
     Footer,
     FAQ,
+    Connect,
   },
 };
 </script>
 
 <style lang="scss">
 @import './index.scss';
-</style>/
+</style>
