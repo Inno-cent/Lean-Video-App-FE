@@ -5,14 +5,7 @@
         <Header :isLightMode="true" />
       </div>
 
-      <section class="contact--section">
-        <!-- <div class="contact--top--text">
-            <h3>NeedHelp</h3>
-            <p>
-              Get quick solutions and answers to common questions about using our
-              video calling app efficiently
-            </p>
-          </div> -->
+      <section class="contact--section--container">
         <div class="contact--section">
           <div class="contact--section--inner">
             <div class="left--contact">
