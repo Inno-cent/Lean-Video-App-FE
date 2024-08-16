@@ -13,8 +13,8 @@
       </section>
 
       <section class="section">
-        <!-- <Connect /> -->
-      <!-- </section> -->
+        <Connect />
+      </section>
 
       <section class="section">
         <Footer />
