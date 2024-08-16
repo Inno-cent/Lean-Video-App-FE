@@ -1,0 +1,35 @@
+.about--page--container {
+  .about--page--inner {
+    .about--section--one {
+      .main--head--text--wrapper {
+        margin: auto;
+        // max-width: 2520px;
+        color: #1B263B;
+        .head--text--innner {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin: 5rem 10px 6rem;
+          .head--text--content {
+            h2 {
+              font-family: 'Inter';
+              font-weight: 700;
+              font-size: 48px;
+              text-align: center;
+            }
+          }
+          .sub--head--text {
+            margin-bottom: 2rem;
+            p {
+              font-size: 20px;
+              line-height: 28px;
+              font-weight: 400;
+              text-align: center;
+            }
+          }
+        }
+        // .main--bg--image {
+      }
+    }
+  }
+}
