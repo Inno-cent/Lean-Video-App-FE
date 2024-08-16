@@ -201,13 +201,16 @@
 
     <div class="section">
       <div class="pricing--seection">
-        <div class="background-container">
+        <div class="pricing-background-container">
           <div class="content-container">
             <h1 class="head-text">Start Connecting Effortlessly Today</h1>
             <p class="sub-text">
-              Join thousands of users. Sign up now for seamless, secure, and high-quality video calls
+              Join thousands of users. Sign up now for seamless, secure, and
+              high-quality video calls
             </p>
-            <button class="cta-button">Get started for free</button>
+            <div class="main--head--button--wrapper">
+              <button >Get started for free</button>
+            </div>
           </div>
         </div>
       </div>
