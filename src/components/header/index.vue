@@ -1,5 +1,5 @@
 <template>
-  <div class="header--wrapper">
+  <div :class="['header--wrapper', { 'light-mode': isLightMode }]">
     <header>
       <div class="header--inner">
         <div class="header--logo">
@@ -42,10 +42,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    isLightMode: {
+      type: Boolean,
+      default: false,
+    },
+  },
+};
 </script>
 
 
 <style lang="scss">
-@import "./index.scss";
+@import './index.scss';
 </style>/

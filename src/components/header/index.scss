@@ -13,6 +13,10 @@
       max-width: 2520px;
       padding-inline-end: 40px;
       padding-inline-start: 40px;
+      &.light-mode {
+        background-color: #fff;
+        color: #1b263b;
+      }
       // @include breakpoint-custom-down(1200) {
       //   height: 80px;
       //   padding-inline-end: 40px;
@@ -51,13 +55,13 @@
       .header--auth--buttons {
         display: flex;
         align-items: center;
-        .login{
+        .login {
           margin: 0 15px;
         }
-        .sign-up{
-          button{
+        .sign-up {
+          button {
             padding: 5px 30px;
-            background: #415A77;
+            background: #415a77;
             border-radius: 30px;
             border: none;
             outline: none;
