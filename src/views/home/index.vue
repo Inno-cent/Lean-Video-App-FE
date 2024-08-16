@@ -151,8 +151,8 @@
             <q class="quote--marks">
               This app has completely revolutionized my remote meetings. The
               video quality is consistently outstanding, even with multiple
-              participants, and its incredibly easy to use, making every
-              meeting smooth and productive
+              participants, and its incredibly easy to use, making every meeting
+              smooth and productive
             </q>
           </p>
           <p class="user-name">Alex Joseph</p>
@@ -174,62 +174,87 @@
 
     <div class="FAQ-outer--container">
       <div class="section">
-      <div class="faq--inner">
-        <div class="faq--left">
-          <div class="faq--left__text">
-            <h4>NeedHelp</h4>
-            <p>Get quick solutions and answers to common questions about using our video calling app efficiently</p>
+        <div class="faq--inner">
+          <div class="faq--left">
+            <div class="faq--left__text">
+              <h4>NeedHelp</h4>
+              <p>
+                Get quick solutions and answers to common questions about using
+                our video calling app efficiently
+              </p>
+            </div>
+            <div class="faq--left__image">
+              <img src="../../assets/images/faq.png" alt="" />
+            </div>
           </div>
-          <div class="faq--left__image">
-            <img src="../../assets/images/faq.png" alt="">
-          </div>
-        </div>
-        <div class="faq--right">
-          <div class="faq--right--header">
-            <h2>FAQ'S</h2>
-          </div>
-          <div class="accordion--section--wrapper">
-            <Accordion :items="accordionItems" />
+          <div class="faq--right">
+            <div class="faq--right--header">
+              <h2>FAQ'S</h2>
+            </div>
+            <div class="accordion--section--wrapper">
+              <Accordion :items="accordionItems" />
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="section">
+      <div class="pricing--seection">
+        <div class="background-container">
+          <div class="content-container">
+            <h1 class="head-text">Start Connecting Effortlessly Today</h1>
+            <p class="sub-text">
+              Join thousands of users. Sign up now for seamless, secure, and high-quality video calls
+            </p>
+            <button class="cta-button">Get started for free</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Header from "@components/header/index.vue";
-import Accordion from "@components/accordion/index.vue"
+import Header from '@components/header/index.vue';
+import Accordion from '@components/accordion/index.vue';
 export default {
-  name: "Home",
-  data(){
+  name: 'Home',
+  data() {
     return {
       accordionItems: [
         {
-          title: 'Accordion Item 1',
-          content: 'This is the content for item 1.',
+          title: 'How do I start a video call?',
+          content:
+            'Select a contact from your list and click the video call icon to initiate the call immediately.',
         },
         {
-          title: 'Accordion Item 2',
+          title: 'Can I use the app on multiple devices?',
           content: 'This is the content for item 2.',
         },
         {
-          title: 'Accordion Item 3',
+          title: 'Is my video call secure?',
           content: 'This is the content for item 3.',
+        },
+        {
+          title: 'How do I add contacts?',
+          content: 'This is the content for item 4.',
+        },
+        {
+          title: 'What should I do if I encounter connection issues?',
+          content: 'This is the content for item 5.',
         },
         // Add more items dynamically
       ],
     };
-
   },
   components: {
     Header,
-    Accordion
+    Accordion,
   },
 };
 </script>
 
 <style lang="scss">
-@import "./index.scss";
+@import './index.scss';
 </style>/
