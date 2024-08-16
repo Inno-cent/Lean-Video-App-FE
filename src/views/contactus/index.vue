@@ -94,7 +94,7 @@
               </div>
 
               <div class="textarea-wrap">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Phonenumber"></textarea>
               </div>
             </div>
           </div>
