@@ -49,12 +49,40 @@
               </div>
             </div>
             <div class="part--mission">
-             <div class="mission">
-                <img src="../../assets/images/worldimage.png" alt="">
-             </div>
+              <div class="mission">
+                <img src="../../assets/images/worldimage.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="mission--section--container light">
+      <div class="mission--section">
+        <div class="mission--section--inner">
+          <div class="part--mission">
+            <div class="left--head--text">
+              <h4>Our Vision</h4>
+              <p>
+                We envision a world where distance is no longer an obstacle to
+                meaningful connections. At LeanVideo App, our goal is to
+                redefine digital communication by creating a platform that
+                brings people closer together, no matter where they are.<br />
+                As we continue to innovate, we aim to set a new standard in how
+                people connect, fostering relationships and collaboration that
+                transcend borders. We are committed to building a future where
+                every conversation feels as natural and vibrant as being in the
+                same room.
+              </p>
+            </div>
+          </div>
+          <div class="part--mission">
+            <div class="mission">
+              <img src="../../assets/images/visionimage.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
     </div>
   </div>

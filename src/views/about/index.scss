@@ -2,8 +2,8 @@
   .about--page--inner {
     .about--section--one {
       margin: 2rem auto;
-      padding: 40px;
-      width: 1400px;
+      //   padding: 40px;
+      //   width: 1400px;
       .main--head--text--wrapper {
         margin: auto;
         // max-width: 2520px;
@@ -58,6 +58,9 @@
     justify-content: center;
     align-items: center;
     //   padding: 3rem;
+    &.light{
+        background: #fff;
+    }
     .mission--section {
       display: flex;
       flex-wrap: wrap;
@@ -108,14 +111,13 @@
             }
           }
         }
-        .double--input {
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 1rem;
-          .input {
-          }
-        }
+      }
+    }
+    .mission {
+      img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
       }
     }
   }
