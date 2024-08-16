@@ -2,7 +2,7 @@
   <div class="about--page--container">
     <div class="about--page--inner">
       <div class="header">
-        <Header :isLightMode="true"/>
+        <Header :isLightMode="true" />
       </div>
       <div class="about--section--one">
         <div class="main--head--text--wrapper">
@@ -28,6 +28,65 @@
           <!-- </div> -->
         </div>
       </div>
+
+      
+        <section class="contact--section--container">
+          <div class="contact--section">
+            <div class="contact--section--inner">
+              <div class="part--contact">
+                <div class="left--head--text">
+                  <h4>Get in Touch</h4>
+                  <p>
+                    Feel free to get in touch with us through our contact
+                    channels, and we'll be prompt in addressing your needs. Your
+                    satisfaction and clarity are our priorities, and we look
+                    forward to connecting with you soon
+                  </p>
+                </div>
+              </div>
+              <div class="part--contact">
+                <div class="double--input">
+                  <div class="input first">
+                    <input type="text" name="" id="" placeholder="Firstname" />
+                  </div>
+                  <div class="input">
+                    <input type="text" name="" id="" placeholder="Lastname" />
+                  </div>
+                </div>
+
+                <div class="double--input">
+                  <div class="input first">
+                    <input type="text" name="" id="" placeholder="Email" />
+                  </div>
+                  <div class="input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Phonenumber"
+                    />
+                  </div>
+                </div>
+
+                <div class="textarea-wrap">
+                  <textarea
+                    class="textarea"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Description"
+                  ></textarea>
+                </div>
+
+                <div class="main--head--button--wrapper info">
+                  <button class="info--btn">Submit your information</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     </div>
   </div>
 </template>
