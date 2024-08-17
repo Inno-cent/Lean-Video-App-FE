@@ -109,6 +109,10 @@
     justify-content: space-between;
     padding: 2rem;
     flex-wrap: wrap;
+    @include breakpoint-custom-down(700) {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
     .left--info {
       flex: 1;
       max-width: 500px;
@@ -118,9 +122,13 @@
         font-family: 'Inter';
         font-weight: 700;
         font-size: 25px;
-        line-height: 40px;
+        // line-height: 40px;
         color: #1b263b;
         margin-bottom: 1rem;
+        @include breakpoint-down(sm) {
+          margin-bottom: 0;
+          font-size: 22px;
+        }
       }
 
       p {
