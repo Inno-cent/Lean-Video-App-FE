@@ -80,25 +80,23 @@
       </div>
       <div class="we34r">
         <div class="wetgf4f">
-          <vue-carousel v-if="windowWidth <= 900">
-          
-              <slide v-for="(box, index) in boxes" :key="index">
-                <div class="box">
-                  <div class="image--wrapper">
-                    <img :src="box.image" :alt="box.altText" />
-                  </div>
-                  <div class="box--text">
-                    <div class="main--text">
-                      <h3>{{ box.title }}</h3>
-                      <p>{{ box.description }}</p>
-                    </div>
+          <!-- <vue-carousel v-if="windowWidth <= 900" class="carousel">
+            <slide v-for="(box, index) in boxes" :key="index">
+              <div class="box">
+                <div class="image--wrapper">
+                  <img :src="box.image" :alt="box.altText" />
+                </div>
+                <div class="box--text">
+                  <div class="main--text">
+                    <h3>{{ box.title }}</h3>
+                    <p>{{ box.description }}</p>
                   </div>
                 </div>
-              </slide>
-            
-          </vue-carousel>
+              </div>
+            </slide>
+          </vue-carousel> -->
 
-          <div class="wetgf4f" v-else>
+          <div class="wetgf4f" >
             <div class="box" v-for="(box, index) in boxes" :key="index">
               <div class="image--wrapper">
                 <img :src="box.image" :alt="box.altText" />
