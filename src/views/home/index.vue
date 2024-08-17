@@ -96,7 +96,7 @@
             </slide>
           </vue-carousel> -->
 
-          <div class="wetgf4f" >
+          <div class="wetgf4f">
             <div class="box" v-for="(box, index) in boxes" :key="index">
               <div class="image--wrapper">
                 <img :src="box.image" :alt="box.altText" />
@@ -168,38 +168,40 @@
     </div>
 
     <div class="section">
-      <div class="explore--container">
-        <h1 class="landing--header">What Our Users Are Saying?</h1>
-        <p class="landing--subtext">
-          Discover how our video calling app has enhanced communication for
-          users worldwide, delivering seamless connections
-        </p>
-      </div>
-      <div class="testimony-container">
-        <div class="image-container">
-          <img src="../../assets/images/test.png" alt="User Image" />
-        </div>
-        <div class="text-container">
-          <p class="testimony--text">
-            <q class="quote--marks">
-              This app has completely revolutionized my remote meetings. The
-              video quality is consistently outstanding, even with multiple
-              participants, and its incredibly easy to use, making every meeting
-              smooth and productive
-            </q>
-          </p>
-          <p class="user-name">Alex Joseph</p>
-          <div class="carousel-arrows">
-            <span class="arrow-left">
-              <div class="vector--wrapper">
-                <img src="../../assets/images/vector.svg" alt="left" />
+      <div class="testimony--main--container">
+        <div class="testimony--inner--wrapper">
+          <div class="explore--container">
+            <h1 class="landing--header">What Our Users Are Saying?</h1>
+            <p class="landing--subtext">
+              Discover how our video calling app has enhanced communication for
+              users worldwide, delivering seamless connections
+            </p>
+          </div>
+          <div class="testimony-container">
+            <div class="image-container">
+              <img src="../../assets/images/test.png" alt="User Image" />
+            </div>
+            <div class="text-container">
+              <p class="testimony--text">
+                <q class="quote--marks">
+                  This app has completely revolutionized my remote meetings. The
+                  video quality is consistently outstanding,...
+                </q>
+              </p>
+              <p class="user-name">Alex Joseph</p>
+              <div class="carousel-arrows">
+                <span class="arrow-left">
+                  <div class="vector--wrapper">
+                    <img src="../../assets/images/vector.svg" alt="left" />
+                  </div>
+                </span>
+                <span class="arrow-right">
+                  <div class="vector--wrapper">
+                    <img src="../../assets/images/right.svg" alt="right" />
+                  </div>
+                </span>
               </div>
-            </span>
-            <span class="arrow-right">
-              <div class="vector--wrapper">
-                <img src="../../assets/images/right.svg" alt="right" />
-              </div>
-            </span>
+            </div>
           </div>
         </div>
       </div>

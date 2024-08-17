@@ -103,6 +103,9 @@
       // line-height: 30px;
       color: #1b263b;
       text-align: center;
+      @include breakpoint-down(sm){
+        font-size: 16px;
+      }
     }
   }
 
@@ -321,6 +324,11 @@
     background: #d9d9d980;
   }
 
+  .testimony--main--container{
+    .testimony--inner--wrapper{
+      margin: 2rem 0;
+    }
+  }
   .testimony-container {
     display: flex;
     align-items: center;
@@ -329,6 +337,9 @@
     max-width: 1000px; /* Adjust as needed */
     margin: 0 auto; /* Center the container on the page */
     gap: 2rem;
+    @include breakpoint-down(sm){
+      flex-direction: column;
+    }
 
     .image-container {
       flex: 0 0 45%; /* Take up 45% of the container width */
