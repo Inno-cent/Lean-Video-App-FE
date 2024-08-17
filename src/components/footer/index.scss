@@ -34,11 +34,18 @@
     .left--part {
       width: 48%;
       margin: 0 1%;
+      @include breakpoint-down(sm) {
+        width: 98%;
+        margin: 0 1%;
+      }
     }
     .right--part {
       display: flex;
       align-items: flex-start;
       width: 100%;
+      @include breakpoint-down(sm) {
+        flex-direction: column;
+      }
       .footer-part {
         width: 31%;
         margin: 0 1%;
