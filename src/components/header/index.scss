@@ -79,6 +79,39 @@
     }
   }
 
-  // hamburger 
-  
+  // hamburger
+  .hamburger {
+    cursor: pointer;
+    display: none;
+
+    @include breakpoint-custom-down(768) {
+      display: block;
+    }
+
+    span {
+      width: 27px;
+      height: 3px;
+      background-color: #000;
+      display: block;
+      margin: 4px auto;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    &.open {
+      span {
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(1) {
+          transform: translateY(4px) rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          transform: translateY(-10px) rotate(-45deg);
+        }
+      }
+    }
+  }
 }

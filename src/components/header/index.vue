@@ -65,7 +65,7 @@
             <button>Sign up</button>
           </div>
 
-          <div :class="['hamburger', { open: click }]" @click="handleClick">
+          <div :class="['hamburger', click ? 'open' : '']" @click="handleClick">
             <span></span>
             <span></span>
             <span></span>
