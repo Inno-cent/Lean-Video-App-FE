@@ -1,9 +1,9 @@
 <template>
   <div class="landing--page--container">
     <div class="landing--page--inner">
-        <div class="header--comp--wrapper">
-          <Header />
-        </div>
+      <div class="header--comp--wrapper">
+        <Header />
+      </div>
       <div class="section">
         <div class="main--head--text--wrapper">
           <div class="head--text--innner">
@@ -80,56 +80,34 @@
       </div>
       <div class="we34r">
         <div class="wetgf4f">
-          <div class="box">
-            <div class="image--wrapper">
-              <img
-                src="../../assets//images/createacct.png"
-                alt="create--account"
-              />
-            </div>
-            <div class="box--text">
-              <div class="main--text">
-                <h3>Create your account</h3>
-                <p>
-                  Sign up for free to access seamless video calling features and
-                  start connecting with ease today
-                </p>
-              </div>
-            </div>
-          </div>
+          <vue-carousel v-if="windowWidth <= 900">
+          
+              <slide v-for="(box, index) in boxes" :key="index">
+                <div class="box">
+                  <div class="image--wrapper">
+                    <img :src="box.image" :alt="box.altText" />
+                  </div>
+                  <div class="box--text">
+                    <div class="main--text">
+                      <h3>{{ box.title }}</h3>
+                      <p>{{ box.description }}</p>
+                    </div>
+                  </div>
+                </div>
+              </slide>
+            
+          </vue-carousel>
 
-          <div class="box">
-            <div class="image--wrapper">
-              <img
-                src="../../assets//images/addcct.png"
-                alt="create--account"
-              />
-            </div>
-            <div class="box--text">
-              <div class="main--text">
-                <h3>Add Contacts</h3>
-                <p>
-                  Quickly add contacts and start high-definition video or audio
-                  calls with a single click
-                </p>
+          <div class="wetgf4f" v-else>
+            <div class="box" v-for="(box, index) in boxes" :key="index">
+              <div class="image--wrapper">
+                <img :src="box.image" :alt="box.altText" />
               </div>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="image--wrapper">
-              <img
-                src="../../assets//images/startcall.png"
-                alt="create--account"
-              />
-            </div>
-            <div class="box--text">
-              <div class="main--text">
-                <h3>Start a call</h3>
-                <p>
-                  Click on a contact to instantly start a high-definition video
-                  or audio call with a single click
-                </p>
+              <div class="box--text">
+                <div class="main--text">
+                  <h3>{{ box.title }}</h3>
+                  <p>{{ box.description }}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -231,47 +209,11 @@
 
     <div class="FAQ-outer--container">
       <div class="section">
-        <!-- <div class="faq--inner">
-          <div class="faq--left">
-            <div class="faq--left__text">
-              <h4>NeedHelp</h4>
-              <p>
-                Get quick solutions and answers to common questions about using
-                our video calling app efficiently
-              </p>
-            </div>
-            <div class="faq--left__image">
-              <img src="../../assets/images/faq.png" alt="" />
-            </div>
-          </div>
-          <div class="faq--right">
-            <div class="faq--right--header">
-              <h2>FAQ'S</h2>
-            </div>
-            <div class="accordion--section--wrapper">
-              <Accordion :items="accordionItems" />
-            </div>
-          </div>
-        </div> -->
         <FAQ />
       </div>
     </div>
 
     <div class="section">
-      <!-- <div class="pricing--seection">
-        <div class="pricing-background-container">
-          <div class="content-container">
-            <h1 class="head-text">Start Connecting Effortlessly Today</h1>
-            <p class="sub-text">
-              Join thousands of users. Sign up now for seamless, secure, and
-              high-quality video calls
-            </p>
-            <div class="main--head--button--wrapper">
-              <button>Get started for free</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <Connect />
     </div>
   </div>
@@ -287,12 +229,50 @@ import Footer from '@components/footer/index.vue';
 import Connect from '../../components/connectsection/index.vue';
 export default {
   name: 'Home',
-  data() {},
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+      boxes: [
+        {
+          image: 'src/assets/images/startcall.png',
+          altText: 'create--account',
+          title: 'Create your account',
+          description:
+            'Sign up for free to access seamless video calling features and start connecting with ease today',
+        },
+        {
+          image: 'src/assets/images/addcct.png',
+          altText: 'create--account',
+          title: 'Add Contacts',
+          description:
+            'Quickly add contacts and start high-definition video or audio calls with a single click',
+        },
+        {
+          image: 'src/assets/images/startcall.png',
+          altText: 'create--account',
+          title: 'Start a call',
+          description:
+            'Click on a contact to instantly start a high-definition video or audio call with a single click',
+        },
+      ],
+    };
+  },
   components: {
     Header,
     Footer,
     FAQ,
     Connect,
+  },
+  mounted() {
+    window.addEventListener('resize', this.updateWindowWidth);
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.updateWindowWidth);
+  },
+  methods: {
+    updateWindowWidth() {
+      this.windowWidth = window.innerWidth;
+    },
   },
 };
 </script>
