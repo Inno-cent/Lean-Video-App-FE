@@ -1,10 +1,10 @@
 <template>
   <div class="landing--page--container">
     <div class="landing--page--inner">
-      <div class="section">
         <div class="header--comp--wrapper">
           <Header />
         </div>
+      <div class="section">
         <div class="main--head--text--wrapper">
           <div class="head--text--innner">
             <div class="head--text--content">

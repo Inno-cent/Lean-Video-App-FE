@@ -49,12 +49,21 @@
       align-items: center;
       flex-direction: column;
       margin: 5rem 10px 6rem;
+      margin: 5rem 0;
+      padding-inline-end: 40px;
+      padding-inline-start: 40px;
+      @include breakpoint-down(sm) {
+        margin: 2rem 0;
+      }
       .head--text--content {
         h2 {
           font-family: 'Inter';
           font-weight: 700;
           font-size: 48px;
           text-align: center;
+          @include breakpoint-down(sm) {
+            font-size: 35px;
+          }
         }
       }
       .sub--head--text {
@@ -64,6 +73,9 @@
           line-height: 28px;
           font-weight: 400;
           text-align: center;
+          @include breakpoint-down(sm) {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -159,13 +171,13 @@
           .main--text {
             padding: 1rem;
             text-align: center;
-            h3{
+            h3 {
               font-family: 'Inter';
               font-size: 20px;
               line-height: 38px;
               font-weight: 700;
             }
-            p{
+            p {
               font-size: 17px;
               font-family: 'Inter';
               font-weight: 400;
@@ -339,7 +351,6 @@
   //   }
   .FAQ-outer--container {
     background: #0d1b2a;
-  
   }
 
   .pricing--seection {
