@@ -98,7 +98,7 @@
       display: block;
     }
 
-    span {
+    .line {
       width: 27px;
       height: 3px;
       background-color: #fff;
@@ -106,8 +106,10 @@
       transition: all 0.3s ease-in-out;
       cursor: pointer;
       margin: 6px auto;
+      &.light-mode{
+      background-color: #1b263b;
     }
-
+  }
     &.open {
       span {
         &:nth-child(2) {

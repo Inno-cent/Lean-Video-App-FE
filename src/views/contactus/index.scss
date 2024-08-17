@@ -33,27 +33,24 @@
   .contact--page--container__inner {
     .contact--section--container {
       background: #0d1b2a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      //   padding: 3rem;
+      //   padding: 20px;
       .contact--section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-        width: 1400px;
+        max-width: 1400px;
         margin: 0 auto;
-        // padding: 40px;
         .contact--section--inner {
           display: flex;
           align-items: flex-start;
           justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 1rem;
+          width: 100%;
           .part--contact {
             flex: 1 1 45%;
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
             padding: 40px;
+
             .left--head--text {
               font-family: 'Inter';
               color: #fff;

@@ -66,9 +66,9 @@
           </div>
 
           <div :class="['hamburger', click ? 'open' : '']" @click="handleClick">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span  :class="['line', { 'light-mode': isLightMode }]"></span>
+            <span :class="['line', { 'light-mode': isLightMode }]"></span>
+            <span :class="['line', { 'light-mode': isLightMode }]"></span>
           </div>
         </div>
       </div>
