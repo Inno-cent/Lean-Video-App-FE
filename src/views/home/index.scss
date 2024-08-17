@@ -117,6 +117,9 @@
       flex: 1;
       max-width: 500px;
       padding: 1rem;
+      @include breakpoint-custom-down(700) {
+        max-width: 100%;
+      }
 
       h1 {
         font-family: 'Inter';
@@ -146,6 +149,9 @@
       max-width: 500px;
       padding: 1rem;
       text-align: center;
+      @include breakpoint-custom-down(700) {
+        max-width: 100%;
+      }
 
       img {
         width: 100%;
@@ -172,8 +178,15 @@
       justify-content: space-between;
       width: 100%;
       .box {
-        width: 33.3%;
+        width: 31.3%;
         gap: 1rem;
+        // flex: 1;
+        padding: 2%;
+        .image--wrapper {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
         .box--text {
           margin-top: 1rem;
           .main--text {
@@ -184,6 +197,7 @@
               font-size: 20px;
               line-height: 38px;
               font-weight: 700;
+              text-align: center;
             }
             p {
               font-size: 17px;
