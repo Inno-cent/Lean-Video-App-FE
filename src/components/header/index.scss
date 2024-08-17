@@ -48,6 +48,9 @@
         }
       }
       .header--menu {
+        @include breakpoint-custom-down(890) {
+          display: none;
+        }
         .header--menu__inner {
           display: flex;
           flex-direction: row;
