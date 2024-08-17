@@ -4,12 +4,14 @@
       <div class="header--inner">
         <div class="header--logo">
           <div class="logo--wrapper">
-            <img
-              v-if="!isLightMode"
-              src="../../assets/images/Group 2.svg"
-              alt="logo"
-            />
-            <img v-else src="../../assets/images/dark-logo.svg" alt="logo" />
+            <router-link to="/">
+              <img
+                v-if="!isLightMode"
+                src="../../assets/images/Group 2.svg"
+                alt="logo"
+              />
+              <img v-else src="../../assets/images/dark-logo.svg" alt="logo" />
+            </router-link>
           </div>
         </div>
 
@@ -61,6 +63,12 @@
           </div>
           <div class="sign-up">
             <button>Sign up</button>
+          </div>
+
+          <div :class="['hamburger', { open: click }]" @click="handleClick">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
