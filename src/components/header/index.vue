@@ -78,6 +78,16 @@
 
 <script>
 export default {
+  data() {
+    return {
+      click: false,
+    };
+  },
+  methods: {
+    handleClick() {
+      this.click = !this.click;
+    },
+  },
   props: {
     isLightMode: {
       type: Boolean,
