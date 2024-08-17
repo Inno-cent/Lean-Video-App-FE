@@ -3,11 +3,11 @@
     <div v-for="(item, index) in items" :key="index" class="accordion-item">
       <div class="accordion-header" @click="toggle(index)">
         <h3>{{ item.title }}</h3>
-        <span>
+        <span :class="{ active: activeIndex === index }">
           <svg
             v-if="activeIndex !== index"
-            width="22"
-            height="26"
+            width="18"
+            height="18"
             viewBox="0 0 22 26"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -20,8 +20,8 @@
           </svg>
           <svg
             v-if="activeIndex === index"
-            width="22"
-            height="26"
+            width="18"
+            height="18"
             viewBox="0 0 22 26"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,10 @@
           </svg>
         </span>
       </div>
-      <div v-if="activeIndex === index" class="accordion-content">
+      <div
+        v-if="activeIndex === index"
+        :class="`accordion-content ${activeIndex === index ? 'active' : ''}`"
+      >
         <p>{{ item.content }}</p>
       </div>
     </div>
@@ -54,9 +57,24 @@ export default {
       activeIndex: null,
     };
   },
+
   methods: {
     toggle(index) {
       this.activeIndex = this.activeIndex === index ? null : index;
+      this.$nextTick(() => {
+        const content = this.$el.querySelectorAll('.accordion-content')[index];
+        if (content) {
+          if (this.activeIndex === index) {
+            content.style.height = `${content.scrollHeight}px`;
+            content.style.opacity = '1';
+            content.classList.add('active');
+          } else {
+            content.style.height = '0';
+            content.style.opacity = '0';
+            content.classList.remove('active');
+          }
+        }
+      });
     },
   },
 };

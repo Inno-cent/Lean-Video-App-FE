@@ -3,22 +3,21 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 3rem;
-  @include breakpoint-custom-down(850){
+  @include breakpoint-custom-down(850) {
     padding: 1rem;
   }
   .faq--left {
     flex: 1;
     padding: 0 2rem;
-    @include breakpoint-custom-down(774){
-        display: none;
-
-      }
+    @include breakpoint-custom-down(774) {
+      display: none;
+    }
     .faq--left__text {
-      font-family: 'inter';
+      font-family: 'Inter';
       color: #fff;
       margin-bottom: 3rem;
-      h1 {
-        font-size: 28px;
+      h4 {
+        font-size: 22px;
         font-weight: 700;
         color: #fff;
       }
@@ -45,6 +44,9 @@
         font-size: 40px;
         font-weight: 700;
         color: #fff;
+        @include breakpoint-custom-down(774) {
+          padding: 0 1rem;
+        }
       }
     }
   }
