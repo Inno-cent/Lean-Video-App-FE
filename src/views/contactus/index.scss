@@ -90,6 +90,10 @@
             justify-content: space-between;
             gap: 1rem;
             .input {
+                width: 50%;
+                input{
+                    width: 100%;
+                }
             }
           }
         }
