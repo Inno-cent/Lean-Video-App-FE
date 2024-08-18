@@ -1,0 +1,41 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #1b263b;
+//   font-weight: 400;
+  font-size: 15px;
+  font-family: "Inter";
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 15px 25px;
+  font-size: 15px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #778da980;
+}
+
+.icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  // width: 20px;
+  // height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

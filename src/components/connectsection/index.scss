@@ -1,0 +1,48 @@
+.pricing--seection {
+  background-color: #fff;
+  background-image: url('../../assets/images/pricebg.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-bottom: 5rem;
+  .pricing-background-container {
+  }
+
+  .content-container {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Inter';
+
+    .head-text {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #1b263b;
+    }
+
+    .sub-text {
+      line-height: 30px;
+      font-size: 20px;
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+.main--head--button--wrapper {
+  button {
+    padding: 10px 30px;
+    background: #415a77;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "src/**/*.{js,ts,vue}": [
+      "npm run lint",
+      "npm run format",
+      "npm run prettier:dev",
+      "git add"
+    ]
+  }
+  
