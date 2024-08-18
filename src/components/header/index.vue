@@ -39,19 +39,22 @@
               </li>
             </div>
             <div class="menu--list">
-            
-              <li
-                :class="['header--list--item', { 'light-mode': isLightMode }]"
-              >
-                Learn
-              </li>
+              <router-link to="/">
+                <li
+                  :class="['header--list--item', { 'light-mode': isLightMode }]"
+                >
+                  Learn
+                </li>
+              </router-link>
             </div>
             <div class="menu--list">
-              <li
-                :class="['header--list--item', { 'light-mode': isLightMode }]"
-              >
-                Get help
-              </li>
+              <router-link to="/">
+                <li
+                  :class="['header--list--item', { 'light-mode': isLightMode }]"
+                >
+                  Get help
+                </li>
+              </router-link>
             </div>
           </div>
         </div>
@@ -67,7 +70,7 @@
           </div>
 
           <div :class="['hamburger', click ? 'open' : '']" @click="handleClick">
-            <span  :class="['line', { 'light-mode': isLightMode }]"></span>
+            <span :class="['line', { 'light-mode': isLightMode }]"></span>
             <span :class="['line', { 'light-mode': isLightMode }]"></span>
             <span :class="['line', { 'light-mode': isLightMode }]"></span>
           </div>
