@@ -18,25 +18,31 @@
         <div class="header--menu">
           <div class="header--menu__inner">
             <div class="menu--list">
-              <li
-                :class="['header--list--item', { 'light-mode': isLightMode }]"
-              >
-                About
-              </li>
+              <router-link to="/">
+                <li
+                  :class="['header--list--item', { 'light-mode': isLightMode }]"
+                >
+                  About
+                </li>
+              </router-link>
             </div>
             <div class="menu--list">
-              <li
-                :class="['header--list--item', { 'light-mode': isLightMode }]"
-              >
-                Features
-              </li>
+              <router-link to="/">
+                <li
+                  :class="['header--list--item', { 'light-mode': isLightMode }]"
+                >
+                  Features
+                </li>
+              </router-link>
             </div>
             <div class="menu--list">
-              <li
-                :class="['header--list--item', { 'light-mode': isLightMode }]"
-              >
-                Pricing
-              </li>
+              <router-link to="/">
+                <li
+                  :class="['header--list--item', { 'light-mode': isLightMode }]"
+                >
+                  Pricing
+                </li>
+              </router-link>
             </div>
             <div class="menu--list">
               <router-link to="/">
