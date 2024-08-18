@@ -4,6 +4,7 @@
       margin: 2rem auto;
       //   padding: 40px;
       //   width: 1400px;
+      padding: 0 40px;
       .main--head--text--wrapper {
         margin: auto;
         // max-width: 2520px;
@@ -72,8 +73,14 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @include breakpoint-custom-down(850) {
+          flex-direction: column;
+        }
         &.vision {
           flex-direction: row-reverse;
+          @include breakpoint-custom-down(850) {
+            flex-direction: column;
+          }
         }
         .part--mission {
           flex: 1 1 45%;
@@ -81,6 +88,9 @@
           flex-direction: column;
           gap: 1.5rem;
           padding: 40px;
+          &.img {
+            padding: 0px 40px;
+          }
           .left--head--text {
             font-family: 'Inter';
             color: #fff;

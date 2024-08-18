@@ -48,7 +48,7 @@
                 </p>
               </div>
             </div>
-            <div class="part--mission">
+            <div class="part--mission img">
               <div class="mission">
                 <img src="../../assets/images/worldimage.png" alt="" />
               </div>
