@@ -213,7 +213,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div >
       <Connect />
     </div>
   </div>

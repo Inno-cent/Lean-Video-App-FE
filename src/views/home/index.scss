@@ -57,7 +57,7 @@
       }
       .head--text--content {
         h2 {
-          font-family: 'Inter';
+          font-family: inherit;
           font-weight: 700;
           font-size: 48px;
           text-align: center;
@@ -85,9 +85,9 @@
   .section {
     max-width: 1400px;
     width: 100%;
-    margin: 0 auto;
+    margin: 4rem auto;
     .landing--header {
-      font-family: 'Inter';
+      font-family: inherit;
       font-weight: 700;
       font-size: 25px;
       // line-height: 48px;
@@ -97,7 +97,7 @@
       }
     }
     .landing--subtext {
-      font-family: 'Inter';
+      font-family: inherit;
       font-weight: 400;
       font-size: 18px;
       // line-height: 30px;
@@ -128,7 +128,7 @@
       }
 
       h1 {
-        font-family: 'Inter';
+        font-family: inherit;
         font-weight: 700;
         font-size: 25px;
         // line-height: 40px;
@@ -142,7 +142,7 @@
 
       p {
         margin-bottom: 1.5rem;
-        font-family: 'Inter';
+        font-family: inherit;
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
@@ -197,6 +197,7 @@
         width: 31.3%;
         margin: 2rem 1%;
         height: auto;
+        height: 40rem;
         display: flex;
         flex-direction: column;
         @include breakpoint-custom-down(774) {
@@ -220,7 +221,7 @@
             padding: 1rem;
             text-align: center;
             h3 {
-              font-family: 'Inter';
+              font-family: inherit;
               font-size: 20px;
               line-height: 38px;
               font-weight: 700;
@@ -228,7 +229,7 @@
             }
             p {
               font-size: 17px;
-              font-family: 'Inter';
+              font-family: inherit;
               font-weight: 400;
             }
           }
@@ -292,7 +293,7 @@
           margin-bottom: 1rem;
         }
         h1 {
-          font-family: 'Inter';
+          font-family: inherit;
           font-weight: 700;
           font-size: 20px;
           line-height: 30px;
@@ -301,7 +302,7 @@
         }
 
         p {
-          font-family: 'Inter';
+          font-family: inherit;
           font-weight: 400;
           font-size: 15px;
           // line-height: 30px;
@@ -362,7 +363,7 @@
       align-items: center;
       //   text-align: center;
       .quote--marks {
-        font-family: 'Inter';
+        font-family: inherit;
         font-weight: 400;
         font-size: 18px;
         // line-height: 30px;
@@ -431,7 +432,7 @@
     .content-container {
       text-align: center;
       padding: 2rem;
-      font-family: 'Inter';
+      font-family: inherit;
 
       .head-text {
         font-size: 30px;
