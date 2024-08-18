@@ -53,7 +53,10 @@
         </div>
         <div class="d34rgfd">
           <div class="acct--text">
-            Don’t have an account? <span>Create an account</span>
+            Don’t have an account?
+            <router-link to="/signup">
+              <span>Create an account</span>
+            </router-link>
           </div>
         </div>
       </form>
@@ -62,13 +65,13 @@
 </template>
   
   <script>
-import Input from "@components/input/index.vue";
+import Input from '@components/input/index.vue';
 export default {
-  name: "Login",
+  name: 'Login',
   data() {
     return {
-      email: "",
-      password: "",
+      email: '',
+      password: '',
     };
   },
   components: {
@@ -76,8 +79,8 @@ export default {
   },
   methods: {
     login() {
-      console.log("Email:", this.email);
-      console.log("Password:", this.password);
+      console.log('Email:', this.email);
+      console.log('Password:', this.password);
       // Handle login logic here
     },
   },
@@ -85,5 +88,5 @@ export default {
 </script>
   
   <style lang="scss">
-@import "../index.scss";
+@import '../index.scss';
 </style>/

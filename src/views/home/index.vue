@@ -97,14 +97,53 @@
           </vue-carousel> -->
 
           <div class="wetgf4f">
-            <div class="box" v-for="(box, index) in boxes" :key="index">
+            <div class="box">
               <div class="image--wrapper">
-                <img :src="box.image" :alt="box.altText" />
+                <img
+                  src="../../assets/images/startcall.png"
+                  alt="create--account"
+                />
               </div>
               <div class="box--text">
                 <div class="main--text">
-                  <h3>{{ box.title }}</h3>
-                  <p>{{ box.description }}</p>
+                  <h3>Create your account</h3>
+                  <p>
+                    Sign up for free to access seamless video calling features
+                    and start connecting with ease today
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="image--wrapper">
+                <img src="../../assets/images/addcct.png" alt="Add contact" />
+              </div>
+              <div class="box--text">
+                <div class="main--text">
+                  <h3>Add Contacts</h3>
+                  <p>
+                    Quickly add contacts and start high-definition video or
+                    audio calls with a single click
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="image--wrapper">
+                <img
+                  src="../../assets/images/startcall.png"
+                  alt="Start a call"
+                />
+              </div>
+              <div class="box--text">
+                <div class="main--text">
+                  <h3>Start a call</h3>
+                  <p>
+                    Click on a contact to instantly start a high-definition
+                    video or audio call with a single click
+                  </p>
                 </div>
               </div>
             </div>
@@ -213,7 +252,7 @@
       </div>
     </div>
 
-    <div >
+    <div>
       <Connect />
     </div>
   </div>
@@ -234,21 +273,21 @@ export default {
       windowWidth: window.innerWidth,
       boxes: [
         {
-          image: 'src/assets/images/startcall.png',
+          image: 'assets/images/startcall.png',
           altText: 'create--account',
           title: 'Create your account',
           description:
             'Sign up for free to access seamless video calling features and start connecting with ease today',
         },
         {
-          image: 'src/assets/images/addcct.png',
+          image: '../../assets/images/addcct.png',
           altText: 'create--account',
           title: 'Add Contacts',
           description:
             'Quickly add contacts and start high-definition video or audio calls with a single click',
         },
         {
-          image: 'src/assets/images/startcall.png',
+          image: '../../assets/images/startcall.png',
           altText: 'create--account',
           title: 'Start a call',
           description:

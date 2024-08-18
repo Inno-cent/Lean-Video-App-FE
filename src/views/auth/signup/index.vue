@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-        <button class="form--submit--button" >Sign Up</button>
+        <button class="form--submit--button">Sign Up</button>
         <div class="divider">
           <span class="divider-text">Or</span>
         </div>
@@ -52,7 +52,11 @@
         </div>
         <div class="d34rgfd">
           <div class="acct--text">
-            Already have an account? <span>Create an account</span>
+            Already have an account?
+
+            <router-link to="/login">
+              <span>Log in</span>
+            </router-link>
           </div>
         </div>
       </form>
@@ -61,13 +65,13 @@
 </template>
     
     <script>
-import Input from "@components/input/index.vue";
+import Input from '@components/input/index.vue';
 export default {
-  name: "Login",
+  name: 'Login',
   data() {
     return {
-      email: "",
-      password: "",
+      email: '',
+      password: '',
     };
   },
   components: {
@@ -75,8 +79,8 @@ export default {
   },
   methods: {
     login() {
-      console.log("Email:", this.email);
-      console.log("Password:", this.password);
+      console.log('Email:', this.email);
+      console.log('Password:', this.password);
       // Handle login logic here
     },
   },
@@ -84,5 +88,5 @@ export default {
 </script>
     
     <style lang="scss">
-@import "../index.scss";
+@import '../index.scss';
 </style>
