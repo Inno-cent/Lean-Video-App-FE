@@ -67,9 +67,13 @@
 
         <div class="header--auth--buttons">
           <div class="login">
-            <li :class="['header--list--item', { 'light-mode': isLightMode }]">
-              Log in
-            </li>
+            <router-link to="/">
+              <li
+                :class="['header--list--item', { 'light-mode': isLightMode }]"
+              >
+                Log in
+              </li>
+            </router-link>
           </div>
           <div class="sign-up">
             <button>Sign up</button>
