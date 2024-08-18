@@ -24,7 +24,7 @@
 
           <!-- <div class="main--bg--image"> -->
           <div class="image--inner--wrapper">
-            <img src="@/assets/images/bg.svg" alt="bg-image" />
+            <img src="../../assets/images/bg.svg" alt="bg-image" />
           </div>
           <!-- </div> -->
         </div>
@@ -64,7 +64,7 @@
           </div> -->
         </div>
         <div class="image">
-          <img src="@/assets/images/info.png" alt="info-img" />
+          <img src="../../assets/images/info.png" alt="info-img" />
         </div>
       </div>
     </div>
@@ -134,13 +134,13 @@
             </p>
           </div>
           <div class="image">
-            <img src="@/assets/images/ex2.png" alt="Image 1" />
+            <img src="../../assets/images/ex2.png" alt="Image 1" />
           </div>
         </div>
 
         <div class="container">
           <div class="image">
-            <img src="@assets/images/ex1.png" alt="Image 2" />
+            <img src="../../assets/images/ex1.png" alt="Image 2" />
           </div>
           <div class="content">
             <h1>Easy Contact Management</h1>
@@ -163,7 +163,7 @@
     </div>
     <div class="platform--image--wrapper">
       <div class="image--inner--wrapper platfrom">
-        <img src="@/assets/images/platform.png" alt="" />
+        <img src="../../assets/images/platform.png" alt="" />
       </div>
     </div>
 
@@ -179,7 +179,7 @@
           </div>
           <div class="testimony-container">
             <div class="image-container">
-              <img src="@/assets/images/test.png" alt="User Image" />
+              <img src="../../assets/images/test.png" alt="User Image" />
             </div>
             <div class="text-container">
               <p class="testimony--text">
@@ -192,12 +192,12 @@
               <div class="carousel-arrows">
                 <span class="arrow-left">
                   <div class="vector--wrapper">
-                    <img src="@/assets/images/vector.svg" alt="left" />
+                    <img src="../../assets/images/Vector.svg" alt="left" />
                   </div>
                 </span>
                 <span class="arrow-right">
                   <div class="vector--wrapper">
-                    <img src="@/assets/images/right.svg" alt="right" />
+                    <img src="../../assets/images/right.svg" alt="right" />
                   </div>
                 </span>
               </div>
