@@ -67,7 +67,7 @@
 
         <div class="header--auth--buttons">
           <div class="login">
-            <router-link to="/">
+            <router-link to="/login">
               <li
                 :class="['header--list--item', { 'light-mode': isLightMode }]"
               >
@@ -75,8 +75,11 @@
               </li>
             </router-link>
           </div>
+
           <div class="sign-up">
-            <button>Sign up</button>
+            <router-link to="../signup">
+              <button>Sign up</button>
+            </router-link>
           </div>
 
           <div :class="['hamburger', click ? 'open' : '']" @click="handleClick">
