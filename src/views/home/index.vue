@@ -21,22 +21,21 @@
               <button>Get started for free</button>
             </div>
           </div>
-
-          <!-- <div class="main--bg--image"> -->
-          <div class="image--inner--wrapper">
-            <img src="../../assets/images/bg.svg" alt="bg-image" />
-          </div>
-          <!-- </div> -->
         </div>
       </div>
+      <!-- <div class="main--bg--image"> -->
+      <div class="image--inner--wrapper">
+        <img src="../../assets/images/bg.svg" alt="bg-image" />
+      </div>
+      <!-- </div> -->
     </div>
 
     <div class="section">
       <div class="info--container">
         <div class="left--info">
           <div class="content">
-            <h1>Crystal Clear Communication</h1>
-            <p>
+            <h1 class="animate-h1">Crystal Clear Communication</h1>
+            <p class="animate-p">
               Experience high-definition video and audio quality that makes
               every conversation feel like you're in the same room. Our advanced
               adaptive streaming technology ensures crystal-clear communication,
@@ -47,24 +46,11 @@
               <button>learn more</button>
             </div>
           </div>
-          <!-- <div class="left--info__header">
-            <h2>Crystal Clear Communication</h2>
-          </div>
-          <div class="left--info__sub">
-            <p>
-              Experience high-definition video and audio quality that makes
-              every conversation feel like you're in the same room. Our advanced
-              adaptive streaming technology ensures crystal-clear communication,
-              even in less-than-ideal network conditions. Say goodbye to
-              pixelated faces and choppy audio
-            </p>
-          </div>
-          <div class="main--head--button--wrapper">
-            <button>learn more</button>
-          </div> -->
         </div>
         <div class="image">
-          <img src="../../assets/images/info.png" alt="info-img" />
+          <div class="image-wrap">
+            <img src="../../assets/images/info.png" alt="info-img" />
+          </div>
         </div>
       </div>
     </div>
@@ -201,7 +187,7 @@
       </div>
     </div>
     <div class="platform--image--wrapper">
-      <div class="image--inner--wrapper platfrom">
+      <div class=" platfrom--image--inner">
         <img src="../../assets/images/platform.png" alt="" />
       </div>
     </div>
@@ -302,7 +288,26 @@ export default {
     FAQ,
     Connect,
   },
+
   mounted() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    });
+
+    // Observe both the h1 and p elements for visibility
+    document
+      .querySelectorAll(
+        '.animate-h1, .animate-p, landing--header, landing--subtext'
+      )
+      .forEach(el => {
+        observer.observe(el);
+      });
     window.addEventListener('resize', this.updateWindowWidth);
   },
   beforeDestroy() {

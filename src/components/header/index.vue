@@ -44,7 +44,7 @@
                 </li>
               </router-link>
             </div>
-            <div class="menu--list">
+            <!-- <div class="menu--list">
               <router-link to="/">
                 <li
                   :class="['header--list--item', { 'light-mode': isLightMode }]"
@@ -52,7 +52,7 @@
                   Learn
                 </li>
               </router-link>
-            </div>
+            </div> -->
             <div class="menu--list">
               <router-link to="/">
                 <li

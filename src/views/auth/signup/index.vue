@@ -1,8 +1,8 @@
 <template>
   <div class="login-container">
-    <div class="image-section">
+    <!-- <div class="image-section">
       <img src="@/assets/images/signin.png" alt="signup Image" />
-    </div>
+    </div> -->
     <div class="form-section">
       <div class="form--head-text">
         <h1>Create Your Account</h1>

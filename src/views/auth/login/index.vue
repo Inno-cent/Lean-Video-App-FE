@@ -1,8 +1,8 @@
 <template>
   <div class="login-container">
-    <div class="image-section">
+    <!-- <div class="image-section">
       <img src="@/assets/images/login.png" alt="Login Image" />
-    </div>
+    </div> -->
     <div class="form-section">
       <div class="form--head-text">
         <h1>Welcome Back!</h1>
