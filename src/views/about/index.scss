@@ -5,7 +5,7 @@
       //   padding: 40px;
       max-width: 1200px;
       padding: 0 40px;
-      @include breakpoint-down(sm){
+      @include breakpoint-down(xs) {
         padding: 0 20px;
       }
       .main--head--text--wrapper {
@@ -93,8 +93,14 @@
           flex-direction: column;
           gap: 1.5rem;
           padding: 40px;
+          @include breakpoint-down(xs) {
+            padding: 40px 20px;
+          }
           &.img {
-            padding: 0px 40px;
+            padding: 40px 40px;
+            @include breakpoint-down(xs) {
+              padding: 40px 20px;
+            }
           }
           .left--head--text {
             font-family: 'Inter';
