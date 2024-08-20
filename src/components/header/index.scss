@@ -13,9 +13,14 @@
       max-width: 2520px;
       padding-inline-end: 40px;
       padding-inline-start: 40px;
+
       &.light-mode {
         background-color: #fff;
         color: #1b263b;
+      }
+      @include breakpoint-down(xs) {
+        padding-inline-end: 20px;
+        padding-inline-start: 20px;
       }
       // @include breakpoint-custom-down(1200) {
       //   height: 80px;

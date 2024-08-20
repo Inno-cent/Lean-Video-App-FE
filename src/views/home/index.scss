@@ -48,6 +48,7 @@
     margin: auto;
     // max-width: 2520px;
     color: #fff;
+    overflow: hidden;
     .head--text--innner {
       display: flex;
       align-items: flex-start;
@@ -57,9 +58,16 @@
       padding-inline-end: 40px;
       padding-inline-start: 40px;
       width: 80%;
+      @include breakpoint-custom-down(690) {
+        width: 100%;
+      }
 
       @include breakpoint-down(sm) {
         margin: 2rem 0;
+      }
+      @include breakpoint-down(xs) {
+        padding-inline-end: 20px;
+        padding-inline-start: 20px;
       }
       .head--text--content {
         h2 {
@@ -104,6 +112,7 @@
       font-size: 25px;
       // line-height: 48px;
       color: #1b263b;
+    
       @include breakpoint-down(sm) {
         font-size: 22px;
       }
@@ -115,6 +124,7 @@
       // line-height: 30px;
       color: #1b263b;
       text-align: center;
+    
       @include breakpoint-down(sm) {
         font-size: 16px;
       }
@@ -180,6 +190,20 @@
       max-width: 500px;
       padding: 1rem;
       text-align: center;
+      // opacity: 0;
+      // transform: translateX(
+      //   150%
+      // );
+      // transition:
+      //   transform 1s ease-out,
+      //   opacity 1s ease-out;
+
+      // &.visible {
+      //   opacity: 1;
+      //   transform: translateX(
+      //     0
+      //   );
+      // }
       @include breakpoint-custom-down(700) {
         max-width: 100%;
       }

@@ -47,24 +47,11 @@
               <button>learn more</button>
             </div>
           </div>
-          <!-- <div class="left--info__header">
-            <h2>Crystal Clear Communication</h2>
-          </div>
-          <div class="left--info__sub">
-            <p>
-              Experience high-definition video and audio quality that makes
-              every conversation feel like you're in the same room. Our advanced
-              adaptive streaming technology ensures crystal-clear communication,
-              even in less-than-ideal network conditions. Say goodbye to
-              pixelated faces and choppy audio
-            </p>
-          </div>
-          <div class="main--head--button--wrapper">
-            <button>learn more</button>
-          </div> -->
         </div>
         <div class="image">
-          <img src="../../assets/images/info.png" alt="info-img" />
+          <div class="image-wrap">
+            <img src="../../assets/images/info.png" alt="info-img" />
+          </div>
         </div>
       </div>
     </div>
@@ -315,9 +302,13 @@ export default {
     });
 
     // Observe both the h1 and p elements for visibility
-    document.querySelectorAll('.animate-h1, .animate-p').forEach(el => {
-      observer.observe(el);
-    });
+    document
+      .querySelectorAll(
+        '.animate-h1, .animate-p, landing--header, landing--subtext'
+      )
+      .forEach(el => {
+        observer.observe(el);
+      });
     window.addEventListener('resize', this.updateWindowWidth);
   },
   beforeDestroy() {
