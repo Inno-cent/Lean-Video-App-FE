@@ -312,11 +312,10 @@ export default {
       });
     });
 
-    document
-      .querySelectorAll('.animate-h2, .animate-p, .animate-h1')
-      .forEach(el => {
-        observer.observe(el);
-      });
+    // Observe both the h1 and p elements for visibility
+    document.querySelectorAll('.animate-h1, .animate-p').forEach(el => {
+      observer.observe(el);
+    });
 
     window.addEventListener('resize', this.updateWindowWidth);
   },
