@@ -35,8 +35,8 @@
       <div class="info--container">
         <div class="left--info">
           <div class="content">
-            <h1>Crystal Clear Communication</h1>
-            <p>
+            <h1 class="animate-h1">Crystal Clear Communication</h1>
+            <p class="animate-p">
               Experience high-definition video and audio quality that makes
               every conversation feel like you're in the same room. Our advanced
               adaptive streaming technology ensures crystal-clear communication,
@@ -302,7 +302,22 @@ export default {
     FAQ,
     Connect,
   },
+
   mounted() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document
+      .querySelectorAll('.animate-h2, .animate-p, .animate-h1')
+      .forEach(el => {
+        observer.observe(el);
+      });
+
     window.addEventListener('resize', this.updateWindowWidth);
   },
   beforeDestroy() {
