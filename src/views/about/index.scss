@@ -5,6 +5,9 @@
       //   padding: 40px;
       max-width: 1200px;
       padding: 0 40px;
+      @include breakpoint-down(sm){
+        padding: 0 20px;
+      }
       .main--head--text--wrapper {
         margin: auto;
         // max-width: 2520px;
