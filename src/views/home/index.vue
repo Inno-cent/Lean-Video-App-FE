@@ -21,14 +21,13 @@
               <button>Get started for free</button>
             </div>
           </div>
-
-          <!-- <div class="main--bg--image"> -->
-          <div class="image--inner--wrapper">
-            <img src="../../assets/images/bg.svg" alt="bg-image" />
-          </div>
-          <!-- </div> -->
         </div>
       </div>
+      <!-- <div class="main--bg--image"> -->
+      <div class="image--inner--wrapper">
+        <img src="../../assets/images/bg.svg" alt="bg-image" />
+      </div>
+      <!-- </div> -->
     </div>
 
     <div class="section">
@@ -188,7 +187,7 @@
       </div>
     </div>
     <div class="platform--image--wrapper">
-      <div class="image--inner--wrapper platfrom">
+      <div class=" platfrom--image--inner">
         <img src="../../assets/images/platform.png" alt="" />
       </div>
     </div>
