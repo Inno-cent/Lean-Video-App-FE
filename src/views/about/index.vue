@@ -96,7 +96,8 @@
           </div>
           <div class="we34r">
             <div class="wetgf4f">
-              <div class="box">
+              <!-- <div class="box">
+
                 <div class="image--wrapper">
                   <img src="../../assets/images/team.png" alt="profile" />
                 </div>
@@ -130,7 +131,8 @@
                     <p>Founder & CEO</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
+
             </div>
           </div>
         </div>
@@ -152,13 +154,56 @@
 import Header from '@components/header/index.vue';
 import Connect from '../../components/connectsection/index.vue';
 import Footer from '@components/footer/index.vue';
+
 export default {
   name: 'About',
-  data() {},
+  data() {
+    return {
+      boxes: [
+        {
+          name: 'Alex Johnson',
+          position: 'Founder & CEO',
+          image: '../../assets/images/team.png',
+          alt: 'profile',
+        },
+        {
+          name: 'Jane Doe',
+          position: 'COO',
+          image: '../../assets/images/team.png',
+          alt: 'profile',
+        },
+        {
+          name: 'Jane Doe',
+          position: 'COO',
+          image: '../../assets/images/team.png',
+          alt: 'profile',
+        },
+        {
+          name: 'Jane Doe',
+          position: 'COO',
+          image: '../../assets/images/team.png',
+          alt: 'profile',
+        },
+        {
+          name: 'Jane Doe',
+          position: 'COO',
+          image: '../../assets/images/team.png',
+          alt: 'profile',
+        },
+        {
+          name: 'Jane Doe',
+          position: 'COO',
+          image: '../../assets/images/team.png',
+          alt: 'profile',
+        },
+      ],
+    };
+  },
   components: {
     Header,
     Footer,
     Connect,
+  
   },
 };
 </script>
