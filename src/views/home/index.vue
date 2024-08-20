@@ -308,6 +308,8 @@ export default {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
         }
       });
     });
@@ -316,7 +318,6 @@ export default {
     document.querySelectorAll('.animate-h1, .animate-p').forEach(el => {
       observer.observe(el);
     });
-
     window.addEventListener('resize', this.updateWindowWidth);
   },
   beforeDestroy() {
