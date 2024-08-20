@@ -133,6 +133,8 @@
                 </div>
               </div> -->
 
+             
+             
             </div>
           </div>
         </div>
@@ -197,13 +199,14 @@ export default {
           alt: 'profile',
         },
       ],
+     
     };
   },
   components: {
     Header,
     Footer,
     Connect,
-  
+   
   },
 };
 </script>
