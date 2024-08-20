@@ -1,8 +1,14 @@
 .login-container {
   display: flex;
-  height: 100vh;
+  // height: 100vh;
   align-items: stretch;
-  font-family: "Inter";
+  align-items: center;
+  justify-content: center;
+  font-family: "inter";
+  form{
+    max-width: ;
+    width: 100%;
+  }
   .image-section {
     flex: 1;
     background-color: #f5f5f5;

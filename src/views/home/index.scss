@@ -21,6 +21,13 @@
     padding-inline-start: 40px;
     max-width: 1400px;
     margin: 0 auto;
+    transform: rotate(-10deg); /* Tilt the image */
+    mask-image: linear-gradient(
+      to right,
+      black 50%,
+      transparent 100%
+    );
+    animation: fadeInTilt 1.5s ease forwards;
     &.platfrom {
       padding-top: 60px;
       padding-bottom: 60px;
@@ -46,12 +53,14 @@
     color: #fff;
     .head--text--innner {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
       margin: 5rem 10px 6rem;
       margin: 5rem 0;
       padding-inline-end: 40px;
       padding-inline-start: 40px;
+      width: 80%;
+
       @include breakpoint-down(sm) {
         margin: 2rem 0;
       }
@@ -60,7 +69,9 @@
           font-family: inherit;
           font-weight: 700;
           font-size: 48px;
-          text-align: center;
+          // text-align: center;
+          opacity: 0;
+          animation: fadeIn 2s ease forwards;
           @include breakpoint-down(sm) {
             font-size: 35px;
           }
@@ -72,7 +83,10 @@
           font-size: 20px;
           line-height: 28px;
           font-weight: 400;
-          text-align: center;
+          // text-align: center;
+          opacity: 0;
+          animation: fadeIn 2.5s ease forwards; /* Fade-in animation with delay */
+          animation-delay: 1s;
           @include breakpoint-down(sm) {
             font-size: 18px;
           }
@@ -92,7 +106,7 @@
       font-size: 25px;
       // line-height: 48px;
       color: #1b263b;
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         font-size: 22px;
       }
     }
@@ -103,7 +117,7 @@
       // line-height: 30px;
       color: #1b263b;
       text-align: center;
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         font-size: 16px;
       }
     }
@@ -256,7 +270,7 @@
     border: 1px;
     align-items: stretch;
     gap: 2rem;
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       flex-direction: column;
     }
 
@@ -325,8 +339,8 @@
     background: #d9d9d980;
   }
 
-  .testimony--main--container{
-    .testimony--inner--wrapper{
+  .testimony--main--container {
+    .testimony--inner--wrapper {
       margin: 2rem 0;
     }
   }
@@ -338,7 +352,7 @@
     max-width: 1000px; /* Adjust as needed */
     margin: 0 auto; /* Center the container on the page */
     gap: 2rem;
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       flex-direction: column;
     }
 
@@ -450,4 +464,26 @@
     }
   }
 }
-// }
+
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for fade-in and tilt effect */
+@keyframes fadeInTilt {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-10deg);
+  }
+}
