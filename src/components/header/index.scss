@@ -15,7 +15,9 @@
       padding-inline-start: 40px;
 
       &.light-mode {
-        background-color: #fff;
+        // background-color: #fff;
+  background: #0d1b2a;
+
         color: #1b263b;
       }
       @include breakpoint-down(xs) {
