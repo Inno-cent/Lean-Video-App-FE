@@ -89,6 +89,25 @@
           </div>
         </div>
       </div>
+      <div class="nav--mobile">
+        <nav :class="['nav-links', click ? 'active' : '']">
+          <router-link to="/about" class="nav-link-item">
+            About
+          </router-link>
+
+          <router-link to="/" class="nav-link-item">
+            Features
+          </router-link>
+
+          <router-link to="/" class="nav-link-item">
+            Pricing
+          </router-link>
+
+          <router-link to="/" class="nav-link-item">
+            Get help
+          </router-link>
+        </nav>
+      </div>
     </header>
   </div>
 </template>

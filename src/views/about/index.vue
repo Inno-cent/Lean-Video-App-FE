@@ -134,8 +134,14 @@
               </div> -->
 
               <swiper
+                :modules="modules"
                 :slides-per-view="3"
-                :space-between="20"
+                :space-between="50"
+                navigation
+                :pagination="{ clickable: true }"
+                :scrollbar="{ draggable: true }"
+                @swiper="onSwiper"
+                @slideChange="onSlideChange"
                 :breakpoints="breakpoints"
                 class="my-swiper"
               >
@@ -177,42 +183,47 @@ import Connect from '../../components/connectsection/index.vue';
 import Footer from '@components/footer/index.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import teamImage from '@/assets/images/team.png';
 
 export default {
   name: 'About',
 
   data() {
     return {
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y],
       profiles: [
         {
           name: 'Alex Johnson',
           title: 'Founder & CEO',
-          imgSrc: "@/assets/images/team.png",
+          imgSrc: teamImage,
         },
         {
           name: 'Alex Johnson',
           title: 'Founder & CEO',
-          imgSrc: "@/assets/images/team.png",
+          imgSrc: teamImage,
         },
         {
           name: 'Alex Johnson',
           title: 'Founder & CEO',
-          imgSrc: "@/assets/images/team.png",
+          imgSrc: teamImage,
         },
         {
           name: 'Alex Johnson',
           title: 'Founder & CEO',
-          imgSrc: "@/assets/images/team.png",
+          imgSrc: teamImage,
         },
         {
           name: 'Alex Johnson',
           title: 'Founder & CEO',
-          imgSrc: "@/assets/images/team.png",
+          imgSrc: teamImage,
         },
         {
           name: 'Alex Johnson',
           title: 'Founder & CEO',
-          imgSrc: "@/assets/images/team.png",
+          imgSrc: teamImage,
         },
         // Add more profiles as needed
       ],
