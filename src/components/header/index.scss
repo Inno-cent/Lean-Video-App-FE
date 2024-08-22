@@ -158,6 +158,17 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  padding-inline-end: 40px;
+  padding-inline-start: 40px;
+
+  &.light-mode {
+    background-color: #fff;
+    color: #1b263b;
+  }
+  @include breakpoint-down(xs) {
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
+  }
   &.active {
     width: 100%;
     align-items: center;
@@ -170,7 +181,12 @@
       flex-direction: column;
       position: absolute;
       height: calc(100vh - 70px);
-      background: #0d1b2a;
+      background: conic-gradient(
+        from 132.57deg at 58.04% 62.79%,
+        #166bc6 0deg,
+        #0d1b2a 196.2deg,
+        #166bc6 360deg
+      );
       top: 70px;
       left: 0;
       transition: all 0.5s ease;
