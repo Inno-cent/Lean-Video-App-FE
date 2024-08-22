@@ -15,9 +15,7 @@
       padding-inline-start: 40px;
 
       &.light-mode {
-        // background-color: #fff;
-  background: #0d1b2a;
-
+        background-color: #fff;
         color: #1b263b;
       }
       @include breakpoint-down(xs) {
@@ -172,7 +170,7 @@
       flex-direction: column;
       position: absolute;
       height: calc(100vh - 70px);
-      background: #fff;
+      background: #0d1b2a;
       top: 70px;
       left: 0;
       transition: all 0.5s ease;
@@ -180,7 +178,7 @@
       .nav-link-item {
         display: block;
         margin: 24px 0;
-        color: #000;
+        color: #fff;
         cursor: pointer;
       }
     }
@@ -205,7 +203,7 @@
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
     &::before {
-      content: "";
+      content: '';
       background: #000;
       display: block;
       position: absolute;
