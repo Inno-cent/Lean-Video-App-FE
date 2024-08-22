@@ -91,35 +91,19 @@
       </div>
       <div class="nav--mobile">
         <nav :class="['nav-links', click ? 'active' : '']">
-          <router-link to="/about" class="nav-link-item">
-            About
-          </router-link>
+          <router-link to="/about" class="nav-link-item"> About </router-link>
 
-          <router-link to="/" class="nav-link-item">
-            Features
-          </router-link>
+          <router-link to="/" class="nav-link-item"> Features </router-link>
 
-          <router-link to="/" class="nav-link-item">
-            Pricing
-          </router-link>
+          <router-link to="/" class="nav-link-item"> Pricing </router-link>
 
-          <router-link to="/" class="nav-link-item">
-            Get help
-          </router-link>
+          <router-link to="/" class="nav-link-item"> Get help </router-link>
 
-        
-            <router-link to="/login">
-              <li
-                :class="['header--list--item', { 'light-mode': isLightMode }]"
-              >
-                Log in
-              </li>
-            </router-link>
-        
+          <router-link to="/login" class="nav-link-item"> Log in </router-link>
 
-          <div class="sign-up">
+          <div class="sign-up-mobile">
             <router-link to="./signup">
-              <button>Sign up</button>
+              <button class="mobile">Sign up</button>
             </router-link>
           </div>
         </nav>

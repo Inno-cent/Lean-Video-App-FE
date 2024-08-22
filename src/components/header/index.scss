@@ -1,5 +1,48 @@
 .header--wrapper {
-  font-family: 'Inter';
+  font-family: inherit;
+  .header--list--item {
+    list-style: none;
+    list-style-type: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #fff;
+    margin: 0px 15px;
+    padding: 7px;
+    border-radius: 11px;
+    transition: background 0.5s ease;
+    &:hover {
+      background: #324153;
+    }
+    &.light-mode {
+      background-color: #fff;
+      color: #1b263b;
+    }
+  }
+  .sign-up {
+    @include breakpoint-down(sm) {
+      display: none;
+    }
+    &.mobile{
+      width: 100%;
+    }
+    button {
+      padding: 5px 30px;
+      background: #415a77;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      color: #fff;
+      transition: background 0.3s ease;
+      &:hover {
+        background: #324153;
+      }
+    }
+  }
   header {
     .header--inner {
       // display: flex;
@@ -27,26 +70,7 @@
       //   padding-inline-end: 40px;
       //   padding-inline-start: 40px;
       // }
-      .header--list--item {
-        list-style: none;
-        list-style-type: none;
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 27px;
-        color: #fff;
-        margin: 0px 15px;
-        padding: 7px;
-        border-radius: 11px;
-        transition: background 0.5s ease;
-        &:hover {
-          background: #324153;
-        }
-        &.light-mode {
-          background-color: #fff;
-          color: #1b263b;
-        }
-      }
+      
       .header--logo {
         .logo--wrapper {
           img {
@@ -210,6 +234,30 @@
     }
     &:hover::before {
       width: 100%;
+    }
+  }
+
+  .sign-up-mobile{
+    @include breakpoint-down(sm) {
+      display: none;
+    }
+    .mobile{
+      width: 100%;
+    }
+    button {
+      padding: 5px 30px;
+      background: #415a77;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      color: #fff;
+      transition: background 0.3s ease;
+      &:hover {
+        background: #324153;
+      }
     }
   }
 }
