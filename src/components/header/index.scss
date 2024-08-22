@@ -24,7 +24,7 @@
     @include breakpoint-down(sm) {
       display: none;
     }
-    &.mobile{
+    &.mobile {
       width: 100%;
     }
     button {
@@ -70,7 +70,7 @@
       //   padding-inline-end: 40px;
       //   padding-inline-start: 40px;
       // }
-      
+
       .header--logo {
         .logo--wrapper {
           img {
@@ -103,7 +103,6 @@
             display: none;
           }
         }
-     
       }
     }
   }
@@ -237,13 +236,8 @@
     }
   }
 
-  .sign-up-mobile{
-    @include breakpoint-down(sm) {
-      display: none;
-    }
-    .mobile{
-      width: 100%;
-    }
+  .sign-up-mobile {
+    width: 100%;
     button {
       padding: 5px 30px;
       background: #415a77;
@@ -255,6 +249,10 @@
       line-height: 27px;
       color: #fff;
       transition: background 0.3s ease;
+      width: 60%;
+      @include breakpoint-down(xs) {
+        width: 100%;
+      }
       &:hover {
         background: #324153;
       }
