@@ -106,6 +106,22 @@
           <router-link to="/" class="nav-link-item">
             Get help
           </router-link>
+
+        
+            <router-link to="/login">
+              <li
+                :class="['header--list--item', { 'light-mode': isLightMode }]"
+              >
+                Log in
+              </li>
+            </router-link>
+        
+
+          <div class="sign-up">
+            <router-link to="./signup">
+              <button>Sign up</button>
+            </router-link>
+          </div>
         </nav>
       </div>
     </header>

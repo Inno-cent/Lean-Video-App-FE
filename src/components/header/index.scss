@@ -79,26 +79,7 @@
             display: none;
           }
         }
-        .sign-up {
-          @include breakpoint-down(sm) {
-            display: none;
-          }
-          button {
-            padding: 5px 30px;
-            background: #415a77;
-            border-radius: 30px;
-            border: none;
-            outline: none;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 27px;
-            color: #fff;
-            transition: background 0.3s ease;
-            &:hover {
-              background: #324153;
-            }
-          }
-        }
+     
       }
     }
   }
@@ -160,11 +141,6 @@
   line-height: 24px;
   padding-inline-end: 40px;
   padding-inline-start: 40px;
-
-  &.light-mode {
-    background-color: #fff;
-    color: #1b263b;
-  }
   @include breakpoint-down(xs) {
     padding-inline-end: 20px;
     padding-inline-start: 20px;
@@ -206,7 +182,7 @@
   .nav-link-item {
     white-space: nowrap;
     margin-left: 2rem;
-    color: #000000;
+    color: #fff;
     font-size: inherit;
     cursor: pointer;
     background-image: linear-gradient(to right, #000, #000 50%, #000 50%);
@@ -216,7 +192,7 @@
     padding: 5px 0;
     position: relative;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
     &::before {
       content: '';
