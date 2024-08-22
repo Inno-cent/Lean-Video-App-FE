@@ -132,13 +132,12 @@
                   </div>
                 </div>
               </div> -->
-
-             
-             
             </div>
           </div>
         </div>
       </div>
+
+     
 
       <section class="section">
         <Connect />
@@ -156,6 +155,7 @@
 import Header from '@components/header/index.vue';
 import Connect from '../../components/connectsection/index.vue';
 import Footer from '@components/footer/index.vue';
+
 
 export default {
   name: 'About',
@@ -199,14 +199,20 @@ export default {
           alt: 'profile',
         },
       ],
-     
     };
+  },
+
+  methods: {
+    handleChanged(slideIndex) {
+      this.slide1 = slideIndex;
+      console.log(`changed1 ${slideIndex}`);
+    },
   },
   components: {
     Header,
     Footer,
     Connect,
-   
+  
   },
 };
 </script>

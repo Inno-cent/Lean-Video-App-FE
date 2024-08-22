@@ -18,7 +18,7 @@
         <div class="header--menu">
           <div class="header--menu__inner">
             <div class="menu--list">
-              <router-link to="/">
+              <router-link to="/about">
                 <li
                   :class="['header--list--item', { 'light-mode': isLightMode }]"
                 >

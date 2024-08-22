@@ -16,7 +16,9 @@
         </div>
         <div class="d34rgfd2">
           <div class="acct--textq">
-           Have your password? <span> Log in</span>
+            <router-link to="/login">
+              Have your password? <span> Log in</span>
+            </router-link>
           </div>
         </div>
       </div>
@@ -25,9 +27,9 @@
 </template>
 
 <script>
-import Input from "@components/input/index.vue";
+import Input from '@components/input/index.vue';
 export default {
-  name: "Forgot-password",
+  name: 'Forgot-password',
   data() {
     return {};
   },
@@ -39,5 +41,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "./index.scss";
+@import './index.scss';
 </style>

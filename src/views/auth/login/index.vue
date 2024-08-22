@@ -34,7 +34,10 @@
               </div>
               <div class="remember--text">Remember me for 30 days</div>
             </div>
-            <div class="forget--password">Forget password?</div>
+
+            <router-link to="/forgot-password">
+              <div class="forget--password">Forget password?</div>
+            </router-link>
           </div>
         </div>
         <button class="form--submit--button">Log in</button>
