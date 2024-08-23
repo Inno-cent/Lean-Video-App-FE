@@ -10,12 +10,18 @@
       }
       .main--head--text--wrapper {
         margin: auto;
-        // max-width: 2520px;
         color: #1b263b;
         .head--text--innner {
           display: flex;
           align-items: center;
           flex-direction: column;
+          width: 80%;
+          justify-content: center;
+          text-align: center;
+          margin: 0 auto;
+          @include breakpoint-down(sm) {
+            width: 100%;
+          }
           //   margin: 5rem 10px 6rem;
           .head--text--content {
             h4 {
@@ -23,6 +29,9 @@
               font-weight: 700;
               font-size: 30px;
               text-align: center;
+              @include breakpoint-down(sm) {
+              font-size: 25px;
+              }
             }
           }
           .sub--head--text {
@@ -32,6 +41,9 @@
               // line-height: 28px;
               font-weight: 400;
               text-align: center;
+              @include breakpoint-down(sm) {
+              font-size: 15px;
+              }
             }
           }
         }
@@ -46,6 +58,10 @@
         max-width: 1200px;
         margin: 0 auto;
         width: 80%;
+        @include breakpoint-down(sm) {
+          width: 100%;
+          padding: 0;
+        }
         &.platfrom {
           padding-top: 60px;
           padding-bottom: 60px;
@@ -161,32 +177,45 @@
     }
     .we34r {
       padding: 2rem;
+      .carousel-container {
+        .my-swiper {
+          width: 100%;
+          .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 31.3% ;
+            margin-left: 1%;
+            margin-right: 1%;
+          }
+        }
+      }
       .wetgf4f {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         width: 100%;
-        .box {
-          width: 33.3%;
-          gap: 1rem;
-          .box--text {
-            margin-top: 1rem;
-            .main--text {
-              padding: 1rem;
+      }
+      .box {
+        // width: 33.3%;
+        // gap: 1rem;
+        .box--text {
+          margin-top: 1rem;
+          .main--text {
+            padding: 1rem;
+            text-align: center;
+            color: #fff;
+            h3 {
+              font-family: 'Inter';
+              font-size: 20px;
+              line-height: 38px;
+              font-weight: 700;
               text-align: center;
-              color: #fff;
-              h3 {
-                font-family: 'Inter';
-                font-size: 20px;
-                line-height: 38px;
-                font-weight: 700;
-                text-align: center;
-              }
-              p {
-                font-size: 17px;
-                font-family: 'Inter';
-                font-weight: 400;
-              }
+            }
+            p {
+              font-size: 17px;
+              font-family: 'Inter';
+              font-weight: 400;
             }
           }
         }

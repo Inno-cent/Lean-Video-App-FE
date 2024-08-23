@@ -85,7 +85,7 @@
         </div>
       </section>
 
-      <div class="team--container">
+      <!-- <div class="team--container">
         <div class="section">
           <div class="works--conatiner">
             <h1 class="landing--header">Meet Our Team</h1>
@@ -95,55 +95,41 @@
             </p>
           </div>
           <div class="we34r">
-            <div class="wetgf4f">
-              <!-- <div class="box">
-
-                <div class="image--wrapper">
-                  <img src="../../assets/images/team.png" alt="profile" />
-                </div>
-                <div class="box--text">
-                  <div class="main--text">
-                    <h3>Alex Johnson</h3>
-                    <p>Founder & CEO</p>
+            <div class="carousel-container">
+              <swiper
+                :modules="modules"
+                navigation
+                :pagination="{ clickable: true }"
+                :scrollbar="{ draggable: true }"
+                @swiper="onSwiper"
+                @slideChange="onSlideChange"
+                :breakpoints="breakpoints"
+                class="my-swiper"
+              >
+                <swiper-slide v-for="(profile, index) in profiles" :key="index">
+                  <div class="box">
+                    <div class="image--wrapper">
+                      <img :src="profile.imgSrc" :alt="profile.name" />
+                    </div>
+                    <div class="box--text">
+                      <div class="main--text">
+                        <h3>{{ profile.name }}</h3>
+                        <p>{{ profile.title }}</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="image--wrapper">
-                  <img src="../../assets/images/team.png" alt="profile" />
-                </div>
-                <div class="box--text">
-                  <div class="main--text">
-                    <h3>Alex Johnson</h3>
-                    <p>Founder & CEO</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="image--wrapper">
-                  <img src="../../assets/images/team.png" alt="profile" />
-                </div>
-                <div class="box--text">
-                  <div class="main--text">
-                    <h3>Alex Johnson</h3>
-                    <p>Founder & CEO</p>
-                  </div>
-                </div>
-              </div> -->
-
-             
-             
+                </swiper-slide>
+              </swiper>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+
+      <!-- <img src="@/assets/images/team.png" alt=""> -->
 
       <section class="section">
         <Connect />
       </section>
-
       <section class="section">
         <Footer />
       </section>
@@ -156,57 +142,87 @@
 import Header from '@components/header/index.vue';
 import Connect from '../../components/connectsection/index.vue';
 import Footer from '@components/footer/index.vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.css';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import teamImage from '@/assets/images/team.png';
 
 export default {
   name: 'About',
-  data() {
+  setup() {
+    const onSwiper = swiper => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log('slide change');
+    };
     return {
-      boxes: [
-        {
-          name: 'Alex Johnson',
-          position: 'Founder & CEO',
-          image: '../../assets/images/team.png',
-          alt: 'profile',
-        },
-        {
-          name: 'Jane Doe',
-          position: 'COO',
-          image: '../../assets/images/team.png',
-          alt: 'profile',
-        },
-        {
-          name: 'Jane Doe',
-          position: 'COO',
-          image: '../../assets/images/team.png',
-          alt: 'profile',
-        },
-        {
-          name: 'Jane Doe',
-          position: 'COO',
-          image: '../../assets/images/team.png',
-          alt: 'profile',
-        },
-        {
-          name: 'Jane Doe',
-          position: 'COO',
-          image: '../../assets/images/team.png',
-          alt: 'profile',
-        },
-        {
-          name: 'Jane Doe',
-          position: 'COO',
-          image: '../../assets/images/team.png',
-          alt: 'profile',
-        },
-      ],
-     
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y],
     };
   },
+  data() {
+    return {
+      profiles: [
+        {
+          name: 'Alex Johnson',
+          title: 'Founder & CEO',
+          imgSrc: teamImage,
+        },
+        {
+          name: 'Alex Johnson',
+          title: 'Founder & CEO',
+          imgSrc: teamImage,
+        },
+        {
+          name: 'Alex Johnson',
+          title: 'Founder & CEO',
+          imgSrc: teamImage,
+        },
+        {
+          name: 'Alex Johnson',
+          title: 'Founder & CEO',
+          imgSrc: teamImage,
+        },
+        {
+          name: 'Alex Johnson',
+          title: 'Founder & CEO',
+          imgSrc: teamImage,
+        },
+        {
+          name: 'Alex Johnson',
+          title: 'Founder & CEO',
+          imgSrc: teamImage,
+        },
+
+        // Add more profiles as needed
+      ],
+      breakpoints: {
+        // Define your responsive breakpoints here
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+    };
+  },
+
+  methods: {},
   components: {
     Header,
     Footer,
     Connect,
-   
+    Swiper,
+    SwiperSlide,
   },
 };
 </script>

@@ -1,5 +1,48 @@
 .header--wrapper {
-  font-family: 'Inter';
+  font-family: inherit;
+  .header--list--item {
+    list-style: none;
+    list-style-type: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #fff;
+    margin: 0px 15px;
+    padding: 7px;
+    border-radius: 11px;
+    transition: background 0.5s ease;
+    &:hover {
+      background: #324153;
+    }
+    &.light-mode {
+      background-color: #fff;
+      color: #1b263b;
+    }
+  }
+  .sign-up {
+    @include breakpoint-down(sm) {
+      display: none;
+    }
+    &.mobile {
+      width: 100%;
+    }
+    button {
+      padding: 5px 30px;
+      background: #415a77;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      color: #fff;
+      transition: background 0.3s ease;
+      &:hover {
+        background: #324153;
+      }
+    }
+  }
   header {
     .header--inner {
       // display: flex;
@@ -27,26 +70,7 @@
       //   padding-inline-end: 40px;
       //   padding-inline-start: 40px;
       // }
-      .header--list--item {
-        list-style: none;
-        list-style-type: none;
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 27px;
-        color: #fff;
-        margin: 0px 15px;
-        padding: 7px;
-        border-radius: 11px;
-        transition: background 0.5s ease;
-        &:hover {
-          background: #324153;
-        }
-        &.light-mode {
-          background-color: #fff;
-          color: #1b263b;
-        }
-      }
+
       .header--logo {
         .logo--wrapper {
           img {
@@ -77,26 +101,6 @@
           margin: 0 15px;
           @include breakpoint-down(sm) {
             display: none;
-          }
-        }
-        .sign-up {
-          @include breakpoint-down(sm) {
-            display: none;
-          }
-          button {
-            padding: 5px 30px;
-            background: #415a77;
-            border-radius: 30px;
-            border: none;
-            outline: none;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 27px;
-            color: #fff;
-            transition: background 0.3s ease;
-            &:hover {
-              background: #324153;
-            }
           }
         }
       }
@@ -138,6 +142,123 @@
         &:nth-child(3) {
           transform: translateY(-10px) rotate(-45deg);
         }
+      }
+    }
+  }
+}
+
+.nav--mobile {
+  display: none;
+  @include breakpoint-custom-down(890) {
+    display: flex;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: inherit;
+  background: transparent;
+  backdrop-filter: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding-inline-end: 40px;
+  padding-inline-start: 40px;
+
+  @include breakpoint-down(xs) {
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
+  }
+  &.active {
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    @include breakpoint-down(md) {
+      justify-content: start;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      position: absolute;
+      height: calc(100vh - 70px);
+      background: conic-gradient(
+        from 132.57deg at 58.04% 62.79%,
+        #166bc6 0deg,
+        #0d1b2a 196.2deg,
+        #166bc6 360deg
+      );
+      top: 70px;
+      left: 0;
+      transition: all 0.5s ease;
+      z-index: 20000;
+      .nav-link-item {
+        display: block;
+        margin: 24px 0;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  @include breakpoint-down(md) {
+    display: none;
+  }
+
+  .nav-link-item {
+    white-space: nowrap;
+    margin-left: 2rem;
+    color: #fff;
+    font-size: inherit;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #000, #000 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    &::before {
+      content: '';
+      background: #000;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      background-position: 0;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  .sign-up-mobile {
+    width: 100%;
+    button {
+      padding: 5px 30px;
+      background: #415a77;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      color: #fff;
+      transition: background 0.3s ease;
+      width: 60%;
+      @include breakpoint-down(xs) {
+        width: 100%;
+      }
+      &:hover {
+        background: #324153;
       }
     }
   }
