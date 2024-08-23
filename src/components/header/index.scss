@@ -147,12 +147,15 @@
   }
 }
 
-// .nav--mobile{
-//   display: none;
-// }
+.nav--mobile {
+  display: none;
+  @include breakpoint-custom-down(890) {
+    display: flex;
+  }
+}
 
 .nav-links {
-  display: none;
+  display: flex;
   align-items: center;
   flex-direction: row;
   height: inherit;
@@ -164,9 +167,7 @@
   line-height: 24px;
   padding-inline-end: 40px;
   padding-inline-start: 40px;
-  @include breakpoint-custom-down(890) {
-    display: flex;
-  }
+
   @include breakpoint-down(xs) {
     padding-inline-end: 20px;
     padding-inline-start: 20px;
