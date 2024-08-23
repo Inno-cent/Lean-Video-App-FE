@@ -29,6 +29,9 @@
               font-weight: 700;
               font-size: 30px;
               text-align: center;
+              @include breakpoint-down(sm) {
+              font-size: 25px;
+              }
             }
           }
           .sub--head--text {
@@ -38,6 +41,9 @@
               // line-height: 28px;
               font-weight: 400;
               text-align: center;
+              @include breakpoint-down(sm) {
+              font-size: 15px;
+              }
             }
           }
         }
