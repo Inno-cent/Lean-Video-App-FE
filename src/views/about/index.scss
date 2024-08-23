@@ -10,7 +10,6 @@
       }
       .main--head--text--wrapper {
         margin: auto;
-        // max-width: 2520px;
         color: #1b263b;
         .head--text--innner {
           display: flex;
@@ -20,8 +19,8 @@
           justify-content: center;
           text-align: center;
           margin: 0 auto;
-          @include breakpoint-down(xs) {
-            
+          @include breakpoint-down(sm) {
+            width: 100%;
           }
           //   margin: 5rem 10px 6rem;
           .head--text--content {
@@ -53,6 +52,10 @@
         max-width: 1200px;
         margin: 0 auto;
         width: 80%;
+        @include breakpoint-down(sm) {
+          width: 100%;
+          padding: 0;
+        }
         &.platfrom {
           padding-top: 60px;
           padding-bottom: 60px;
