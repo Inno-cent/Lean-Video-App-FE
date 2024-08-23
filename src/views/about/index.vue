@@ -85,7 +85,7 @@
         </div>
       </section>
 
-      <div class="team--container">
+      <!-- <div class="team--container">
         <div class="section">
           <div class="works--conatiner">
             <h1 class="landing--header">Meet Our Team</h1>
@@ -95,48 +95,9 @@
             </p>
           </div>
           <div class="we34r">
-            <div class="wetgf4f">
-              <!-- <div class="box">
-
-                <div class="image--wrapper">
-                  <img src="../../assets/images/team.png" alt="profile" />
-                </div>
-                <div class="box--text">
-                  <div class="main--text">
-                    <h3>Alex Johnson</h3>
-                    <p>Founder & CEO</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="image--wrapper">
-                  <img src="../../assets/images/team.png" alt="profile" />
-                </div>
-                <div class="box--text">
-                  <div class="main--text">
-                    <h3>Alex Johnson</h3>
-                    <p>Founder & CEO</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="image--wrapper">
-                  <img src="../../assets/images/team.png" alt="profile" />
-                </div>
-                <div class="box--text">
-                  <div class="main--text">
-                    <h3>Alex Johnson</h3>
-                    <p>Founder & CEO</p>
-                  </div>
-                </div>
-              </div> -->
-
+            <div class="carousel-container">
               <swiper
                 :modules="modules"
-                :slides-per-view="3"
-                :space-between="50"
                 navigation
                 :pagination="{ clickable: true }"
                 :scrollbar="{ draggable: true }"
@@ -162,7 +123,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- <img src="@/assets/images/team.png" alt=""> -->
 
@@ -188,12 +149,21 @@ import teamImage from '@/assets/images/team.png';
 
 export default {
   name: 'About',
-
-  data() {
+  setup() {
+    const onSwiper = swiper => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log('slide change');
+    };
     return {
       onSwiper,
       onSlideChange,
       modules: [Navigation, Pagination, Scrollbar, A11y],
+    };
+  },
+  data() {
+    return {
       profiles: [
         {
           name: 'Alex Johnson',
@@ -225,6 +195,7 @@ export default {
           title: 'Founder & CEO',
           imgSrc: teamImage,
         },
+
         // Add more profiles as needed
       ],
       breakpoints: {
